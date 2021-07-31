@@ -3,7 +3,7 @@
   <compound refid="classOrt_1_1ImageClassificationOrtSessionHandler" kind="class"><name>Ort::ImageClassificationOrtSessionHandler</name>
     <member refid="classOrt_1_1ImageClassificationOrtSessionHandler_1a25a96178409b2676b425324d902fa537" kind="function"><name>ImageClassificationOrtSessionHandler</name></member>
     <member refid="classOrt_1_1ImageClassificationOrtSessionHandler_1aeaffe5550ab571f4e10477fd3317a3c7" kind="function"><name>~ImageClassificationOrtSessionHandler</name></member>
-    <member refid="classOrt_1_1ImageClassificationOrtSessionHandler_1af169d77a9b2cc038a25015a8ddea4890" kind="function"><name>topK</name></member>
+    <member refid="classOrt_1_1ImageClassificationOrtSessionHandler_1a4b2fbb5fa91a98a7270b5500061d38cf" kind="function"><name>topK</name></member>
     <member refid="classOrt_1_1ImageClassificationOrtSessionHandler_1aec42c71f603000d6c038fcefe1b74264" kind="function"><name>topKToString</name></member>
   </compound>
   <compound refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase" kind="class"><name>Ort::ImageRecognitionOrtSessionHandlerBase</name>
@@ -12,7 +12,7 @@
     <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1ae355622b6602addc7158d994f8c350a3" kind="function"><name>ImageRecognitionOrtSessionHandlerBase</name></member>
     <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a06bb4e8775c549cf020b07dfb70abb52" kind="function"><name>~ImageRecognitionOrtSessionHandlerBase</name></member>
     <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a0ea5184de97dc72e718d9fd78fdf5186" kind="function"><name>initClassNames</name></member>
-    <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a11f8a0fa6a257b4876996d631475627e" kind="function"><name>preprocess</name></member>
+    <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a26b84439032ba07c2d033a0a2fe46736" kind="function"><name>preprocess</name></member>
     <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a13e637ab5f5da6765f633de57c29fcbf" kind="function"><name>numClasses</name></member>
     <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1adbacf383d7c9c7470f0dd70560aade36" kind="function"><name>classNames</name></member>
   </compound>
@@ -33,28 +33,7 @@
     <member refid="classOrt_1_1OrtSessionHandler_1a15db600bc50579c8f86b85ea9b83df92" kind="variable"><name>m_piml</name></member>
     <member refid="classOrt_1_1OrtSessionHandler_1acc01cfadfefab7dee93a81fa9d4595ca" kind="function"><name>OrtSessionHandler</name></member>
     <member refid="classOrt_1_1OrtSessionHandler_1afbd528ee0838f6470d00dc318f570245" kind="function"><name>~OrtSessionHandler</name></member>
-    <member refid="classOrt_1_1OrtSessionHandler_1aee4f8f2afd6f68e60c373d832768be6c" kind="function"><name>operator()</name></member>
-  </compound>
-  <compound refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml" kind="class"><name>Ort::OrtSessionHandler::OrtSessionHandlerIml</name>
-    <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a2798e0f3691ad5f7c1d1bb1db34b6c36" kind="variable"><name>m_modelPath</name></member>
-    <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a1bfacf2afcafb361ae23c3c40d410b0c" kind="variable"><name>m_session</name></member>
-    <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a46869ebc0845391248a08a866004489e" kind="variable"><name>m_env</name></member>
-    <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1affb27fbd056cf2c289c40503cffecf3d" kind="variable"><name>m_ortAllocator</name></member>
-    <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a3536578acc8305a9638d5a602c6cc422" kind="variable"><name>m_gpuIdx</name></member>
-    <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1ae7ed67f333bc8ecbf69f86aa3eadc81c" kind="variable"><name>m_inputShapes</name></member>
-    <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a0b579be7dad1a7f105b00399ffa19e16" kind="variable"><name>m_outputShapes</name></member>
-    <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a58ef8d88a976ac71e22c72a0ff41e378" kind="variable"><name>m_inputTensorSizes</name></member>
-    <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1aee2d76100192b8476382f9d6c3238f27" kind="variable"><name>m_outputTensorSizes</name></member>
-    <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a42e80f30247209acad3abe914021745b" kind="variable"><name>m_numInputs</name></member>
-    <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a52b9aa2056b3c6bf5b10f1153696d419" kind="variable"><name>m_numOutputs</name></member>
-    <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a8fe4a0cd6dcbd56df09461f0def32fbc" kind="variable"><name>m_inputNodeNames</name></member>
-    <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1ab79484c2a1c5de373d35992c0cbd995d" kind="variable"><name>m_outputNodeNames</name></member>
-    <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a690bbd68775762332afc2d6729bbfadc" kind="variable"><name>m_inputShapesProvided</name></member>
-    <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a271b2f3b6083f6cecef625ee0ca4122a" kind="function"><name>OrtSessionHandlerIml</name></member>
-    <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1aa86344e1e9ca97daf2d5a429c43a2780" kind="function"><name>~OrtSessionHandlerIml</name></member>
-    <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1ad71ae38af75741692107d4521cafcba2" kind="function"><name>operator()</name></member>
-    <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1afaa3835cf9a0df8e0c9cf4dfe790a993" kind="function"><name>initSession</name></member>
-    <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a62e85ced1084f2f50356499638e8c419" kind="function"><name>initModelInfo</name></member>
+    <member refid="classOrt_1_1OrtSessionHandler_1a3dacc7b6e34deb971c6e8adc75c4a9ed" kind="function"><name>operator()</name></member>
   </compound>
   <compound refid="classOrt_1_1TinyYolov2" kind="class"><name>Ort::TinyYolov2</name>
     <member refid="classOrt_1_1TinyYolov2_1a1baafc57c083199396eec24421a06ffb" kind="variable"><name>IMG_WIDTH</name></member>
@@ -67,7 +46,7 @@
     <member refid="classOrt_1_1TinyYolov2_1a9d834c16ab2e470793f9514bd5f8c08e" kind="function"><name>TinyYolov2</name></member>
     <member refid="classOrt_1_1TinyYolov2_1a7a3da45c20ac0360dcc782162190992f" kind="function"><name>~TinyYolov2</name></member>
     <member refid="classOrt_1_1TinyYolov2_1a14938a1f61dec4bc8eb6ee36dfae6703" kind="function"><name>preprocess</name></member>
-    <member refid="classOrt_1_1TinyYolov2_1a262ed070abb51c070240ce7db20cc48c" kind="function"><name>postProcess</name></member>
+    <member refid="classOrt_1_1TinyYolov2_1a483f04b0e9e967f70ad8273a7cfd90ce" kind="function"><name>postProcess</name></member>
   </compound>
   <compound refid="classOrt_1_1UltraLightFastGenericFaceDetector" kind="class"><name>Ort::UltraLightFastGenericFaceDetector</name>
     <member refid="classOrt_1_1UltraLightFastGenericFaceDetector_1a346536c679c5748b2e8421d874f1bc14" kind="variable"><name>IMG_H</name></member>
@@ -85,15 +64,13 @@
     <member refid="classOrt_1_1Yolov3_1a878d05c0c92156a9dd1e75c76cbad21b" kind="function"><name>~Yolov3</name></member>
     <member refid="classOrt_1_1Yolov3_1a56211d1e866822ffa1f11451876ee89e" kind="function"><name>preprocess</name></member>
   </compound>
-  <compound refid="namespace_0d10" kind="namespace"><name>@10</name>
-  </compound>
   <compound refid="namespace_0d13" kind="namespace"><name>@13</name>
   </compound>
-  <compound refid="namespace_0d18" kind="namespace"><name>@18</name>
+  <compound refid="namespace_0d14" kind="namespace"><name>@14</name>
   </compound>
-  <compound refid="namespace_0d21" kind="namespace"><name>@21</name>
+  <compound refid="namespace_0d15" kind="namespace"><name>@15</name>
   </compound>
-  <compound refid="namespace_0d24" kind="namespace"><name>@24</name>
+  <compound refid="namespace_0d16" kind="namespace"><name>@16</name>
   </compound>
   <compound refid="namespace_0d6" kind="namespace"><name>@6</name>
   </compound>
@@ -113,8 +90,6 @@
     <member refid="Utility_8hpp_1a83938fa9b6900fa43b93a1c240214111" kind="function"><name>sigmoid</name></member>
     <member refid="Utility_8hpp_1a6c88a61ecee0a0ba1601664cfbed9758" kind="function"><name>nms</name></member>
     <member refid="Utility_8hpp_1a41f62ba2c081f68146787153f503cf54" kind="function"><name>generateColorCharts</name></member>
-  </compound>
-  <compound refid="MaskRCNN_8cpp" kind="file"><name>MaskRCNN.cpp</name>
   </compound>
   <compound refid="MaskRCNN_8hpp" kind="file"><name>MaskRCNN.hpp</name>
   </compound>
@@ -137,8 +112,6 @@
     <member refid="TestObjectDetection_8cpp_1a70254e4284a76804e86e5a8caaedf52c" kind="variable"><name>TEST_TIMES</name></member>
     <member refid="TestObjectDetection_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
   </compound>
-  <compound refid="TinyYolov2_8cpp" kind="file"><name>TinyYolov2.cpp</name>
-  </compound>
   <compound refid="TinyYolov2_8hpp" kind="file"><name>TinyYolov2.hpp</name>
   </compound>
   <compound refid="TinyYolov2App_8cpp" kind="file"><name>TinyYolov2App.cpp</name>
@@ -146,8 +119,6 @@
     <member refid="TinyYolov2App_8cpp_1ac95ca6666251d4f58b6fcd4b87156924" kind="variable"><name>NMS_THRESHOLD</name></member>
     <member refid="TinyYolov2App_8cpp_1a43c81430724f454310bbd8817e4c56e8" kind="variable"><name>COLORS</name></member>
     <member refid="TinyYolov2App_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
-  </compound>
-  <compound refid="UltraLightFastGenericFaceDetector_8cpp" kind="file"><name>UltraLightFastGenericFaceDetector.cpp</name>
   </compound>
   <compound refid="UltraLightFastGenericFaceDetector_8hpp" kind="file"><name>UltraLightFastGenericFaceDetector.hpp</name>
   </compound>
@@ -159,8 +130,6 @@
     <member refid="UltraLightFastGenericFaceDetectorApp_8cpp_1ac95ca6666251d4f58b6fcd4b87156924" kind="variable"><name>NMS_THRESHOLD</name></member>
     <member refid="UltraLightFastGenericFaceDetectorApp_8cpp_1a43c81430724f454310bbd8817e4c56e8" kind="variable"><name>COLORS</name></member>
     <member refid="UltraLightFastGenericFaceDetectorApp_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
-  </compound>
-  <compound refid="Yolov3_8cpp" kind="file"><name>Yolov3.cpp</name>
   </compound>
   <compound refid="Yolov3_8hpp" kind="file"><name>Yolov3.hpp</name>
   </compound>
@@ -190,20 +159,10 @@
     <member refid="Utility_8hpp_1a21a2c7330a04ac78200a986f66609369" kind="define"><name>DEBUG_LOG</name></member>
     <member refid="Utility_8hpp_1aa75d4b92253489ed5bac0e19ef731d5e" kind="function"><name>operator&lt;&lt;</name></member>
   </compound>
-  <compound refid="ImageClassificationOrtSessionHandler_8cpp" kind="file"><name>ImageClassificationOrtSessionHandler.cpp</name>
-  </compound>
-  <compound refid="ImageRecognitionOrtSessionHandlerBase_8cpp" kind="file"><name>ImageRecognitionOrtSessionHandlerBase.cpp</name>
-  </compound>
-  <compound refid="ObjectDetectionOrtSessionHandler_8cpp" kind="file"><name>ObjectDetectionOrtSessionHandler.cpp</name>
-  </compound>
-  <compound refid="OrtSessionHandler_8cpp" kind="file"><name>OrtSessionHandler.cpp</name>
-  </compound>
   <compound refid="dir_d28a4824dc47e487b107a5db32ef43c4" kind="dir"><name>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples</name>
   </compound>
   <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include</name>
   </compound>
   <compound refid="dir_9459521d82245eb427906e435a7b6b65" kind="dir"><name>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility</name>
-  </compound>
-  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src</name>
   </compound>
 </doxygenindex>

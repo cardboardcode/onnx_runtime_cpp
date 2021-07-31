@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/Yolov3.hpp" line="32" column="5" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/Yolov3.cpp" bodystart="16" bodyend="21"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/Yolov3.hpp" line="32" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classOrt_1_1Yolov3_1a878d05c0c92156a9dd1e75c76cbad21b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -90,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/Yolov3.hpp" line="37" column="5" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/Yolov3.cpp" bodystart="23" bodyend="25"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/Yolov3.hpp" line="37" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classOrt_1_1Yolov3_1a56211d1e866822ffa1f11451876ee89e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -123,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/Yolov3.hpp" line="39" column="10" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/Yolov3.cpp" bodystart="27" bodyend="41"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/Yolov3.hpp" line="39" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -178,10 +178,10 @@
       <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1acd5160d64e0c433bdff286497b56e322" prot="protected" virt="non-virtual"><scope>Ort::Yolov3</scope><name>m_classNames</name></member>
       <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a4e37fc918d6f31fa41cade7ea7443e5a" prot="protected" virt="non-virtual"><scope>Ort::Yolov3</scope><name>m_numClasses</name></member>
       <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a13e637ab5f5da6765f633de57c29fcbf" prot="public" virt="non-virtual"><scope>Ort::Yolov3</scope><name>numClasses</name></member>
-      <member refid="classOrt_1_1OrtSessionHandler_1aee4f8f2afd6f68e60c373d832768be6c" prot="public" virt="non-virtual"><scope>Ort::Yolov3</scope><name>operator()</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1a3dacc7b6e34deb971c6e8adc75c4a9ed" prot="public" virt="non-virtual"><scope>Ort::Yolov3</scope><name>operator()</name></member>
       <member refid="classOrt_1_1OrtSessionHandler_1acc01cfadfefab7dee93a81fa9d4595ca" prot="public" virt="non-virtual"><scope>Ort::Yolov3</scope><name>OrtSessionHandler</name></member>
       <member refid="classOrt_1_1Yolov3_1a56211d1e866822ffa1f11451876ee89e" prot="public" virt="non-virtual"><scope>Ort::Yolov3</scope><name>preprocess</name></member>
-      <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a11f8a0fa6a257b4876996d631475627e" prot="public" virt="virtual" ambiguityscope="Ort::ImageRecognitionOrtSessionHandlerBase::"><scope>Ort::Yolov3</scope><name>preprocess</name></member>
+      <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a26b84439032ba07c2d033a0a2fe46736" prot="public" virt="virtual" ambiguityscope="Ort::ImageRecognitionOrtSessionHandlerBase::"><scope>Ort::Yolov3</scope><name>preprocess</name></member>
       <member refid="classOrt_1_1Yolov3_1a61a8082c631ad9330d7868665665980e" prot="public" virt="non-virtual"><scope>Ort::Yolov3</scope><name>Yolov3</name></member>
       <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a06bb4e8775c549cf020b07dfb70abb52" prot="public" virt="non-virtual"><scope>Ort::Yolov3</scope><name>~ImageRecognitionOrtSessionHandlerBase</name></member>
       <member refid="classOrt_1_1OrtSessionHandler_1afbd528ee0838f6470d00dc318f570245" prot="public" virt="non-virtual"><scope>Ort::Yolov3</scope><name>~OrtSessionHandler</name></member>

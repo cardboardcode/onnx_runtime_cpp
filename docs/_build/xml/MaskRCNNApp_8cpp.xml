@@ -9,9 +9,6 @@
     <includes refid="ort__utility_8hpp" local="no">ort_utility/ort_utility.hpp</includes>
     <includes refid="MaskRCNN_8hpp" local="yes">MaskRCNN.hpp</includes>
     <includes local="yes">Utility.hpp</includes>
-    <includes local="no">algorithm</includes>
-    <includes local="no">string</includes>
-    <includes local="no">vector</includes>
     <incdepgraph>
       <node id="15">
         <label>limits</label>
@@ -96,12 +93,6 @@
         <childnode refid="23" relation="include">
         </childnode>
         <childnode refid="24" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
         </childnode>
       </node>
       <node id="21">

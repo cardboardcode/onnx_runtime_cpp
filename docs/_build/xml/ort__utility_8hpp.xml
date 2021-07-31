@@ -8,19 +8,15 @@
     <includes refid="OrtSessionHandler_8hpp" local="yes">OrtSessionHandler.hpp</includes>
     <includes refid="ObjectDetectionOrtSessionHandler_8hpp" local="yes">ObjectDetectionOrtSessionHandler.hpp</includes>
     <includes refid="Utility_8hpp" local="yes">Utility.hpp</includes>
-    <includedby refid="ImageClassificationOrtSessionHandler_8cpp" local="yes">/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/ImageClassificationOrtSessionHandler.cpp</includedby>
-    <includedby refid="ImageRecognitionOrtSessionHandlerBase_8cpp" local="yes">/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/ImageRecognitionOrtSessionHandlerBase.cpp</includedby>
-    <includedby refid="ObjectDetectionOrtSessionHandler_8cpp" local="yes">/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/ObjectDetectionOrtSessionHandler.cpp</includedby>
-    <includedby refid="OrtSessionHandler_8cpp" local="yes">/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp</includedby>
     <includedby refid="MaskRCNN_8hpp" local="no">/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/MaskRCNN.hpp</includedby>
-    <includedby refid="MaskRCNNApp_8cpp" local="no">/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/MaskRCNNApp.cpp</includedby>
     <includedby refid="TestImageClassification_8cpp" local="no">/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TestImageClassification.cpp</includedby>
     <includedby refid="TestObjectDetection_8cpp" local="no">/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TestObjectDetection.cpp</includedby>
     <includedby refid="TinyYolov2_8hpp" local="no">/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp</includedby>
-    <includedby refid="TinyYolov2App_8cpp" local="no">/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2App.cpp</includedby>
     <includedby refid="UltraLightFastGenericFaceDetector_8hpp" local="no">/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/UltraLightFastGenericFaceDetector.hpp</includedby>
     <includedby refid="Yolov3_8hpp" local="no">/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/Yolov3.hpp</includedby>
     <includedby refid="Yolov3App_8cpp" local="no">/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/Yolov3App.cpp</includedby>
+    <includedby refid="TinyYolov2App_8cpp" local="no">/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2App.cpp</includedby>
+    <includedby refid="MaskRCNNApp_8cpp" local="no">/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/MaskRCNNApp.cpp</includedby>
     <incdepgraph>
       <node id="10">
         <label>limits</label>
@@ -153,84 +149,52 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4">
-        <label>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/ObjectDetectionOrtSessionHandler.cpp</label>
-        <link refid="ObjectDetectionOrtSessionHandler_8cpp"/>
-      </node>
-      <node id="14">
+      <node id="8">
         <label>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/UltraLightFastGenericFaceDetector.hpp</label>
         <link refid="UltraLightFastGenericFaceDetector_8hpp"/>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="10">
+      <node id="5">
         <label>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TestObjectDetection.cpp</label>
         <link refid="TestObjectDetection_8cpp"/>
       </node>
-      <node id="5">
-        <label>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp</label>
-        <link refid="OrtSessionHandler_8cpp"/>
-      </node>
-      <node id="15">
-        <label>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/UltraLightFastGenericFaceDetector.cpp</label>
-        <link refid="UltraLightFastGenericFaceDetector_8cpp"/>
-      </node>
-      <node id="17">
+      <node id="10">
         <label>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/Yolov3.hpp</label>
         <link refid="Yolov3_8hpp"/>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="13">
+      <node id="7">
         <label>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2App.cpp</label>
         <link refid="TinyYolov2App_8cpp"/>
       </node>
-      <node id="19">
+      <node id="11">
         <label>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/Yolov3App.cpp</label>
         <link refid="Yolov3App_8cpp"/>
       </node>
-      <node id="8">
+      <node id="3">
         <label>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/MaskRCNNApp.cpp</label>
         <link refid="MaskRCNNApp_8cpp"/>
       </node>
-      <node id="7">
-        <label>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/MaskRCNN.cpp</label>
-        <link refid="MaskRCNN_8cpp"/>
-      </node>
-      <node id="16">
+      <node id="9">
         <label>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/UltraLightFastGenericFaceDetectorApp.cpp</label>
         <link refid="UltraLightFastGenericFaceDetectorApp_8cpp"/>
       </node>
-      <node id="12">
-        <label>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.cpp</label>
-        <link refid="TinyYolov2_8cpp"/>
-      </node>
-      <node id="18">
-        <label>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/Yolov3.cpp</label>
-        <link refid="Yolov3_8cpp"/>
-      </node>
-      <node id="9">
+      <node id="4">
         <label>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TestImageClassification.cpp</label>
         <link refid="TestImageClassification_8cpp"/>
       </node>
-      <node id="6">
+      <node id="2">
         <label>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/MaskRCNN.hpp</label>
         <link refid="MaskRCNN_8hpp"/>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
       <node id="1">
         <label>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ort_utility.hpp</label>
         <link refid="ort__utility_8hpp"/>
         <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
@@ -240,36 +204,20 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="11">
+      <node id="6">
         <label>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp</label>
         <link refid="TinyYolov2_8hpp"/>
-        <childnode refid="12" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/ImageRecognitionOrtSessionHandlerBase.cpp</label>
-        <link refid="ImageRecognitionOrtSessionHandlerBase_8cpp"/>
-      </node>
-      <node id="2">
-        <label>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/ImageClassificationOrtSessionHandler.cpp</label>
-        <link refid="ImageClassificationOrtSessionHandler_8cpp"/>
       </node>
     </invincdepgraph>
     <briefdescription>
