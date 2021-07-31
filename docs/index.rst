@@ -6,6 +6,9 @@
 Welcome to onnx_runtime_cpp's documentation!
 ============================================
 
+**onnx_runtime_cpp** is a small library that contains CPP-based example codes that shows how `onnxruntime <https://www.onnxruntime.ai/>`_ can be applied to your project.
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
@@ -25,20 +28,4 @@ Table of Contents
 .. toctree::
     :maxdepth: 2
 
-    api/include/Constants
-    api/include/ImageClassificationOrtSessionHandler
-    api/include/ImageRecognitionOrtSessionHandlerBase
-    api/include/ObjectDetectionOrtSessionHandler
-    api/include/OrtSessionHandler
-    api/include/ort_utility
-    api/include/Utility
-    api/examples/MaskRCNN
-    api/examples/MaskRCNNApp
-    api/examples/TestImageClassification
-    api/examples/TestObjectDetection
-    api/examples/TinyYolov2
-    api/examples/TinyYolov2App
-    api/examples/UltraLightFastGenericFaceDetector
-    api/examples/UltraLightFastGenericFaceDetectorApp
-    api/examples/Yolov3
-    api/examples/Yolov3App
+    api/index
