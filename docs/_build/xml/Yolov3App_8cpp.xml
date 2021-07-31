@@ -3,23 +3,11 @@
   <compounddef id="Yolov3App_8cpp" kind="file" language="C++">
     <compoundname>Yolov3App.cpp</compoundname>
     <includes refid="ort__utility_8hpp" local="no">ort_utility/ort_utility.hpp</includes>
-    <includes refid="examples_2Utility_8hpp" local="yes">Utility.hpp</includes>
+    <includes local="yes">Utility.hpp</includes>
     <includes refid="Yolov3_8hpp" local="yes">Yolov3.hpp</includes>
     <incdepgraph>
       <node id="11">
         <label>limits</label>
-      </node>
-      <node id="20">
-        <label>Utility.hpp</label>
-        <link refid="examples_2Utility_8hpp"/>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
       </node>
       <node id="9">
         <label>cmath</label>
@@ -30,7 +18,7 @@
       <node id="13">
         <label>numeric</label>
       </node>
-      <node id="21">
+      <node id="23">
         <label>opencv2/opencv.hpp</label>
       </node>
       <node id="4">
@@ -56,14 +44,14 @@
         <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="22">
+      <node id="21">
         <label>Yolov3.hpp</label>
         <link refid="Yolov3_8hpp"/>
-        <childnode refid="23" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
         </childnode>
@@ -89,8 +77,11 @@
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
+      </node>
+      <node id="20">
+        <label>Utility.hpp</label>
       </node>
       <node id="16">
         <label>ImageRecognitionOrtSessionHandlerBase.hpp</label>
@@ -104,7 +95,7 @@
         <childnode refid="17" relation="include">
         </childnode>
       </node>
-      <node id="23">
+      <node id="22">
         <label>tuple</label>
       </node>
       <node id="18">
@@ -112,7 +103,7 @@
       </node>
       <node id="6">
         <label>Utility.hpp</label>
-        <link refid="include_2ort__utility_2Utility_8hpp"/>
+        <link refid="Utility_8hpp"/>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
@@ -299,7 +290,7 @@ Copyright (c) organization </para>
 <codeline lineno="1"></codeline>
 <codeline lineno="12"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ort__utility_8hpp" kindref="compound">ort_utility/ort_utility.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="examples_2Utility_8hpp" kindref="compound">Utility.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Utility_8hpp" kindref="compound">Utility.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Yolov3_8hpp" kindref="compound">Yolov3.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>BIRD_CLASSES<sp/>=<sp/>{</highlight><highlight class="stringliteral">&quot;bird_small&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;bird_medium&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;bird_large&quot;</highlight><highlight class="normal">};</highlight></codeline>

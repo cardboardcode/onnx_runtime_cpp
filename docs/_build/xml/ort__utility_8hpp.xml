@@ -7,7 +7,7 @@
     <includes refid="ImageRecognitionOrtSessionHandlerBase_8hpp" local="yes">ImageRecognitionOrtSessionHandlerBase.hpp</includes>
     <includes refid="OrtSessionHandler_8hpp" local="yes">OrtSessionHandler.hpp</includes>
     <includes refid="ObjectDetectionOrtSessionHandler_8hpp" local="yes">ObjectDetectionOrtSessionHandler.hpp</includes>
-    <includes refid="include_2ort__utility_2Utility_8hpp" local="yes">Utility.hpp</includes>
+    <includes refid="Utility_8hpp" local="yes">Utility.hpp</includes>
     <includedby refid="ImageClassificationOrtSessionHandler_8cpp" local="yes">/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/ImageClassificationOrtSessionHandler.cpp</includedby>
     <includedby refid="ImageRecognitionOrtSessionHandlerBase_8cpp" local="yes">/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/ImageRecognitionOrtSessionHandlerBase.cpp</includedby>
     <includedby refid="ObjectDetectionOrtSessionHandler_8cpp" local="yes">/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/ObjectDetectionOrtSessionHandler.cpp</includedby>
@@ -88,7 +88,7 @@
       </node>
       <node id="5">
         <label>Utility.hpp</label>
-        <link refid="include_2ort__utility_2Utility_8hpp"/>
+        <link refid="Utility_8hpp"/>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
@@ -293,7 +293,7 @@ Copyright (c) organization </para>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ObjectDetectionOrtSessionHandler_8hpp" kindref="compound">ObjectDetectionOrtSessionHandler.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="include_2ort__utility_2Utility_8hpp" kindref="compound">Utility.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Utility_8hpp" kindref="compound">Utility.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ort_utility.hpp"/>
   </compounddef>

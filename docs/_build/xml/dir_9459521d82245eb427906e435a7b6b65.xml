@@ -8,7 +8,7 @@
     <innerfile refid="ObjectDetectionOrtSessionHandler_8hpp">ObjectDetectionOrtSessionHandler.hpp</innerfile>
     <innerfile refid="ort__utility_8hpp">ort_utility.hpp</innerfile>
     <innerfile refid="OrtSessionHandler_8hpp">OrtSessionHandler.hpp</innerfile>
-    <innerfile refid="include_2ort__utility_2Utility_8hpp">Utility.hpp</innerfile>
+    <innerfile refid="Utility_8hpp">Utility.hpp</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

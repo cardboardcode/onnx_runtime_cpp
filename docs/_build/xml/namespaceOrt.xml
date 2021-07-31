@@ -119,7 +119,7 @@
         <name>MSCOCO_COLOR_CHART</name>
         <initializer>= generateColorCharts(MSCOCO_NUM_CLASSES)</initializer>
         <briefdescription>
-<para>A vector of array of 3 values that is mapped with cv::Scalar that corresponds to the MSCOCO object classes. It calls generateColorCharts function which is defined under Utility.hpp. </para>
+<para>A vector of array of 3 values that is mapped with cv::Scalar that corresponds to the MSCOCO object classes. It calls generateColorCharts function which is defined under <ref refid="Utility_8hpp" kindref="compound">Utility.hpp</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -166,7 +166,7 @@
         <name>VOC_COLOR_CHART</name>
         <initializer>= generateColorCharts(VOC_NUM_CLASSES)</initializer>
         <briefdescription>
-<para>A vector of array of 3 values that is mapped with cv::Scalar that corresponds to the Pascal VOC object classes. It calls generateColorCharts function which is defined under Utility.hpp. </para>
+<para>A vector of array of 3 values that is mapped with cv::Scalar that corresponds to the Pascal VOC object classes. It calls generateColorCharts function which is defined under <ref refid="Utility_8hpp" kindref="compound">Utility.hpp</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -176,7 +176,7 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="include_2ort__utility_2Utility_8hpp_1aa2535c75b4ec0497ceda787a821b294a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="Utility_8hpp_1aa2535c75b4ec0497ceda787a821b294a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename T</type>
@@ -207,7 +207,7 @@
         </inbodydescription>
         <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Utility.hpp" line="67" column="1" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Utility.hpp" bodystart="67" bodyend="75"/>
       </memberdef>
-      <memberdef kind="function" id="include_2ort__utility_2Utility_8hpp_1abf6c1cb7d27b34247e8c3430e1c64ab3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="Utility_8hpp_1abf6c1cb7d27b34247e8c3430e1c64ab3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void Ort::softmax</definition>
         <argsstring>(float *input, const size_t inputLen)</argsstring>
@@ -228,7 +228,7 @@
         </inbodydescription>
         <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Utility.hpp" line="77" column="13" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Utility.hpp" bodystart="77" bodyend="88"/>
       </memberdef>
-      <memberdef kind="function" id="include_2ort__utility_2Utility_8hpp_1a83938fa9b6900fa43b93a1c240214111" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="Utility_8hpp_1a83938fa9b6900fa43b93a1c240214111" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>float</type>
         <definition>float Ort::sigmoid</definition>
         <argsstring>(const float x)</argsstring>
@@ -245,7 +245,7 @@
         </inbodydescription>
         <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Utility.hpp" line="90" column="14" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Utility.hpp" bodystart="90" bodyend="93"/>
       </memberdef>
-      <memberdef kind="function" id="include_2ort__utility_2Utility_8hpp_1a6c88a61ecee0a0ba1601664cfbed9758" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="Utility_8hpp_1a6c88a61ecee0a0ba1601664cfbed9758" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::vector&lt; uint64_t &gt;</type>
         <definition>std::vector&lt;uint64_t&gt; Ort::nms</definition>
         <argsstring>(const std::vector&lt; std::array&lt; float, 4 &gt;&gt; &amp;bboxes, const std::vector&lt; float &gt; &amp;scores, const float overlapThresh=0.45, const uint64_t topK=std::numeric_limits&lt; uint64_t &gt;::max())</argsstring>
@@ -276,7 +276,7 @@
         </inbodydescription>
         <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Utility.hpp" line="95" column="20" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Utility.hpp" bodystart="95" bodyend="161"/>
       </memberdef>
-      <memberdef kind="function" id="include_2ort__utility_2Utility_8hpp_1a41f62ba2c081f68146787153f503cf54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="Utility_8hpp_1a41f62ba2c081f68146787153f503cf54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::vector&lt; std::array&lt; int, 3 &gt; &gt;</type>
         <definition>std::vector&lt;std::array&lt;int, 3&gt; &gt; Ort::generateColorCharts</definition>
         <argsstring>(const uint16_t numClasses=1000, const uint16_t seed=255)</argsstring>

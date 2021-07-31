@@ -2,104 +2,94 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="UltraLightFastGenericFaceDetectorApp_8cpp" kind="file" language="C++">
     <compoundname>UltraLightFastGenericFaceDetectorApp.cpp</compoundname>
-    <includes refid="examples_2Utility_8hpp" local="yes">Utility.hpp</includes>
+    <includes local="yes">Utility.hpp</includes>
     <includes refid="UltraLightFastGenericFaceDetector_8hpp" local="yes">UltraLightFastGenericFaceDetector.hpp</includes>
     <incdepgraph>
-      <node id="15">
+      <node id="14">
         <label>limits</label>
       </node>
-      <node id="7">
+      <node id="3">
         <label>UltraLightFastGenericFaceDetector.hpp</label>
         <link refid="UltraLightFastGenericFaceDetector_8hpp"/>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>Utility.hpp</label>
-        <link refid="examples_2Utility_8hpp"/>
-        <childnode refid="3" relation="include">
-        </childnode>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-      </node>
-      <node id="13">
-        <label>cmath</label>
+        <childnode refid="7" relation="include">
+        </childnode>
       </node>
       <node id="12">
+        <label>cmath</label>
+      </node>
+      <node id="11">
         <label>cassert</label>
       </node>
-      <node id="17">
+      <node id="16">
         <label>numeric</label>
       </node>
-      <node id="6">
-        <label>opencv2/opencv.hpp</label>
-      </node>
-      <node id="4">
+      <node id="5">
         <label>string</label>
       </node>
-      <node id="22">
+      <node id="21">
         <label>ObjectDetectionOrtSessionHandler.hpp</label>
         <link refid="ObjectDetectionOrtSessionHandler_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Constants.hpp</label>
+        <link refid="Constants_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>OrtSessionHandler.hpp</label>
+        <link refid="OrtSessionHandler_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Utility.hpp</label>
+      </node>
+      <node id="19">
+        <label>ImageRecognitionOrtSessionHandlerBase.hpp</label>
+        <link refid="ImageRecognitionOrtSessionHandlerBase_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
       </node>
-      <node id="10">
-        <label>Constants.hpp</label>
-        <link refid="Constants_8hpp"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-      </node>
-      <node id="21">
-        <label>OrtSessionHandler.hpp</label>
-        <link refid="OrtSessionHandler_8hpp"/>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="20">
-        <label>ImageRecognitionOrtSessionHandlerBase.hpp</label>
-        <link refid="ImageRecognitionOrtSessionHandlerBase_8hpp"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-      </node>
-      <node id="8">
+      <node id="4">
         <label>optional</label>
       </node>
-      <node id="11">
+      <node id="9">
         <label>Utility.hpp</label>
-        <link refid="include_2ort__utility_2Utility_8hpp"/>
-        <childnode refid="3" relation="include">
+        <link refid="Utility_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
@@ -113,12 +103,10 @@
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="5">
+      <node id="6">
         <label>vector</label>
       </node>
       <node id="1">
@@ -126,31 +114,33 @@
         <link refid="UltraLightFastGenericFaceDetectorApp_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="18">
+      <node id="17">
         <label>utility</label>
       </node>
-      <node id="19">
+      <node id="18">
         <label>ImageClassificationOrtSessionHandler.hpp</label>
         <link refid="ImageClassificationOrtSessionHandler_8hpp"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
-      <node id="14">
+      <node id="13">
         <label>deque</label>
       </node>
-      <node id="9">
+      <node id="7">
         <label>ort_utility/ort_utility.hpp</label>
         <link refid="ort__utility_8hpp"/>
-        <childnode refid="10" relation="include">
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
         </childnode>
         <childnode refid="19" relation="include">
         </childnode>
@@ -158,15 +148,13 @@
         </childnode>
         <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="3">
+      <node id="10">
         <label>algorithm</label>
       </node>
-      <node id="16">
+      <node id="15">
         <label>memory</label>
       </node>
     </incdepgraph>
@@ -290,7 +278,7 @@
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"></codeline>
-<codeline lineno="8"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="examples_2Utility_8hpp" kindref="compound">Utility.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Utility_8hpp" kindref="compound">Utility.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="UltraLightFastGenericFaceDetector_8hpp" kindref="compound">UltraLightFastGenericFaceDetector.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>

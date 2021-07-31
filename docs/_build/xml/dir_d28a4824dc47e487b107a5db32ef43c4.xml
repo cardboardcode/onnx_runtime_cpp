@@ -13,7 +13,6 @@
     <innerfile refid="UltraLightFastGenericFaceDetector_8cpp">UltraLightFastGenericFaceDetector.cpp</innerfile>
     <innerfile refid="UltraLightFastGenericFaceDetector_8hpp">UltraLightFastGenericFaceDetector.hpp</innerfile>
     <innerfile refid="UltraLightFastGenericFaceDetectorApp_8cpp">UltraLightFastGenericFaceDetectorApp.cpp</innerfile>
-    <innerfile refid="examples_2Utility_8hpp">Utility.hpp</innerfile>
     <innerfile refid="Yolov3_8cpp">Yolov3.cpp</innerfile>
     <innerfile refid="Yolov3_8hpp">Yolov3.hpp</innerfile>
     <innerfile refid="Yolov3App_8cpp">Yolov3App.cpp</innerfile>

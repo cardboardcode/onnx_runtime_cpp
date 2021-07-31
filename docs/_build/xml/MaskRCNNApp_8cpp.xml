@@ -8,22 +8,13 @@
     <includes local="no">opencv2/opencv.hpp</includes>
     <includes refid="ort__utility_8hpp" local="no">ort_utility/ort_utility.hpp</includes>
     <includes refid="MaskRCNN_8hpp" local="yes">MaskRCNN.hpp</includes>
-    <includes refid="examples_2Utility_8hpp" local="yes">Utility.hpp</includes>
+    <includes local="yes">Utility.hpp</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
     <incdepgraph>
       <node id="15">
         <label>limits</label>
-      </node>
-      <node id="24">
-        <label>Utility.hpp</label>
-        <link refid="examples_2Utility_8hpp"/>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
       </node>
       <node id="13">
         <label>cmath</label>
@@ -74,6 +65,9 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
+      <node id="24">
+        <label>Utility.hpp</label>
+      </node>
       <node id="19">
         <label>ImageRecognitionOrtSessionHandlerBase.hpp</label>
         <link refid="ImageRecognitionOrtSessionHandlerBase_8hpp"/>
@@ -103,13 +97,19 @@
         </childnode>
         <childnode refid="24" relation="include">
         </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
       </node>
       <node id="21">
         <label>optional</label>
       </node>
       <node id="10">
         <label>Utility.hpp</label>
-        <link refid="include_2ort__utility_2Utility_8hpp"/>
+        <link refid="Utility_8hpp"/>
         <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
@@ -267,7 +267,7 @@ Copyright (c) organization </para>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ort__utility_8hpp" kindref="compound">ort_utility/ort_utility.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="MaskRCNN_8hpp" kindref="compound">MaskRCNN.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="examples_2Utility_8hpp" kindref="compound">Utility.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Utility_8hpp" kindref="compound">Utility.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>CONFIDENCE_THRESHOLD<sp/>=<sp/>0.5;</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;cv::Scalar&gt;<sp/>COLORS<sp/>=<sp/>toCvScalarColors(Ort::MSCOCO_COLOR_CHART);</highlight></codeline>

@@ -93,9 +93,7 @@
   </compound>
   <compound refid="namespace_0d21" kind="namespace"><name>@21</name>
   </compound>
-  <compound refid="namespace_0d22" kind="namespace"><name>@22</name>
-  </compound>
-  <compound refid="namespace_0d25" kind="namespace"><name>@25</name>
+  <compound refid="namespace_0d24" kind="namespace"><name>@24</name>
   </compound>
   <compound refid="namespace_0d6" kind="namespace"><name>@6</name>
   </compound>
@@ -110,11 +108,11 @@
     <member refid="Constants_8hpp_1af3c728a3cbabf26d2d9559532bd4c1b7" kind="variable"><name>VOC_CLASSES</name></member>
     <member refid="Constants_8hpp_1ad8ea7bc2d58be7484622511f235e424f" kind="variable"><name>VOC_NUM_CLASSES</name></member>
     <member refid="Constants_8hpp_1ac959d98c82414c7d3e7c6a7281798a3e" kind="variable"><name>VOC_COLOR_CHART</name></member>
-    <member refid="include_2ort__utility_2Utility_8hpp_1aa2535c75b4ec0497ceda787a821b294a" kind="function"><name>operator&lt;&lt;</name></member>
-    <member refid="include_2ort__utility_2Utility_8hpp_1abf6c1cb7d27b34247e8c3430e1c64ab3" kind="function"><name>softmax</name></member>
-    <member refid="include_2ort__utility_2Utility_8hpp_1a83938fa9b6900fa43b93a1c240214111" kind="function"><name>sigmoid</name></member>
-    <member refid="include_2ort__utility_2Utility_8hpp_1a6c88a61ecee0a0ba1601664cfbed9758" kind="function"><name>nms</name></member>
-    <member refid="include_2ort__utility_2Utility_8hpp_1a41f62ba2c081f68146787153f503cf54" kind="function"><name>generateColorCharts</name></member>
+    <member refid="Utility_8hpp_1aa2535c75b4ec0497ceda787a821b294a" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="Utility_8hpp_1abf6c1cb7d27b34247e8c3430e1c64ab3" kind="function"><name>softmax</name></member>
+    <member refid="Utility_8hpp_1a83938fa9b6900fa43b93a1c240214111" kind="function"><name>sigmoid</name></member>
+    <member refid="Utility_8hpp_1a6c88a61ecee0a0ba1601664cfbed9758" kind="function"><name>nms</name></member>
+    <member refid="Utility_8hpp_1a41f62ba2c081f68146787153f503cf54" kind="function"><name>generateColorCharts</name></member>
   </compound>
   <compound refid="MaskRCNN_8cpp" kind="file"><name>MaskRCNN.cpp</name>
   </compound>
@@ -187,12 +185,10 @@
   </compound>
   <compound refid="OrtSessionHandler_8hpp" kind="file"><name>OrtSessionHandler.hpp</name>
   </compound>
-  <compound refid="include_2ort__utility_2Utility_8hpp" kind="file"><name>Utility.hpp</name>
-    <member refid="include_2ort__utility_2Utility_8hpp_1a432138093c53d7580af9ec5c5dca387f" kind="define"><name>ENABLE_DEBUG</name></member>
-    <member refid="include_2ort__utility_2Utility_8hpp_1a21a2c7330a04ac78200a986f66609369" kind="define"><name>DEBUG_LOG</name></member>
-    <member refid="include_2ort__utility_2Utility_8hpp_1aa75d4b92253489ed5bac0e19ef731d5e" kind="function"><name>operator&lt;&lt;</name></member>
-  </compound>
-  <compound refid="examples_2Utility_8hpp" kind="file"><name>Utility.hpp</name>
+  <compound refid="Utility_8hpp" kind="file"><name>Utility.hpp</name>
+    <member refid="Utility_8hpp_1a432138093c53d7580af9ec5c5dca387f" kind="define"><name>ENABLE_DEBUG</name></member>
+    <member refid="Utility_8hpp_1a21a2c7330a04ac78200a986f66609369" kind="define"><name>DEBUG_LOG</name></member>
+    <member refid="Utility_8hpp_1aa75d4b92253489ed5bac0e19ef731d5e" kind="function"><name>operator&lt;&lt;</name></member>
   </compound>
   <compound refid="ImageClassificationOrtSessionHandler_8cpp" kind="file"><name>ImageClassificationOrtSessionHandler.cpp</name>
   </compound>

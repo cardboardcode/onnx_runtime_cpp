@@ -49,7 +49,6 @@ Table of Contents
     api/UltraLightFastGenericFaceDetector
     api/UltraLightFastGenericFaceDetector
     api/UltraLightFastGenericFaceDetectorApp
-    api/Utility
     api/Yolov3
     api/Yolov3
     api/Yolov3App

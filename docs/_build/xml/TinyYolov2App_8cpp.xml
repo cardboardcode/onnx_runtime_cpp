@@ -7,22 +7,10 @@
     <includes local="no">opencv2/opencv.hpp</includes>
     <includes refid="ort__utility_8hpp" local="no">ort_utility/ort_utility.hpp</includes>
     <includes refid="TinyYolov2_8hpp" local="yes">TinyYolov2.hpp</includes>
-    <includes refid="examples_2Utility_8hpp" local="yes">Utility.hpp</includes>
+    <includes local="yes">Utility.hpp</includes>
     <incdepgraph>
       <node id="14">
         <label>limits</label>
-      </node>
-      <node id="25">
-        <label>Utility.hpp</label>
-        <link refid="examples_2Utility_8hpp"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
       </node>
       <node id="12">
         <label>cmath</label>
@@ -89,6 +77,9 @@
         <childnode refid="25" relation="include">
         </childnode>
       </node>
+      <node id="25">
+        <label>Utility.hpp</label>
+      </node>
       <node id="18">
         <label>ImageRecognitionOrtSessionHandlerBase.hpp</label>
         <link refid="ImageRecognitionOrtSessionHandlerBase_8hpp"/>
@@ -109,7 +100,7 @@
       </node>
       <node id="9">
         <label>Utility.hpp</label>
-        <link refid="include_2ort__utility_2Utility_8hpp"/>
+        <link refid="Utility_8hpp"/>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
@@ -280,7 +271,7 @@ Copyright (c) organization </para>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ort__utility_8hpp" kindref="compound">ort_utility/ort_utility.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="TinyYolov2_8hpp" kindref="compound">TinyYolov2.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="examples_2Utility_8hpp" kindref="compound">Utility.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Utility_8hpp" kindref="compound">Utility.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>CONFIDENCE_THRESHOLD<sp/>=<sp/>0.5;</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>NMS_THRESHOLD<sp/>=<sp/>0.6;</highlight></codeline>
