@@ -192,52 +192,62 @@ Copyright (c) organization <dl class="simple">
 <dl class="cpp var">
 <dt id="_CPPv4N3Ort16IMAGENET_CLASSESE">
 <span id="_CPPv3N3Ort16IMAGENET_CLASSESE"></span><span id="_CPPv2N3Ort16IMAGENET_CLASSESE"></span><span id="Ort::IMAGENET_CLASSES__std::vector:ss:C"></span><span class="target" id="Constants_8hpp_1acf1902f4169fd38687b4bf25bb795664"></span><em class="property">static</em> <em class="property">const</em> std::vector&lt;std::string&gt; <code class="sig-name descname">IMAGENET_CLASSES</code><a class="headerlink" href="#_CPPv4N3Ort16IMAGENET_CLASSESE" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>A vector of strings that contains all 1000 object classes in Imagenet Dataset. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt id="_CPPv4N3Ort20IMAGENET_NUM_CLASSESE">
 <span id="_CPPv3N3Ort20IMAGENET_NUM_CLASSESE"></span><span id="_CPPv2N3Ort20IMAGENET_NUM_CLASSESE"></span><span id="Ort::IMAGENET_NUM_CLASSES__int64_t"></span><span class="target" id="Constants_8hpp_1ac07ba90f78eebc64f284e86c2c5f68aa"></span><em class="property">static</em> <em class="property">constexpr</em> int64_t <code class="sig-name descname">IMAGENET_NUM_CLASSES</code> = 1000<a class="headerlink" href="#_CPPv4N3Ort20IMAGENET_NUM_CLASSESE" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 64 bit long integer that stores the number of Imagenet object classes. This variable is used in examples/TestImageClassification.cpp and examples/TestObjectDetection.cpp. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt id="_CPPv4N3Ort13IMAGENET_MEANE">
 <span id="_CPPv3N3Ort13IMAGENET_MEANE"></span><span id="_CPPv2N3Ort13IMAGENET_MEANE"></span><span id="Ort::IMAGENET_MEAN__std::vector:float:C"></span><span class="target" id="Constants_8hpp_1a9e0d1d8122c9ea3c30a6023cc7199164"></span><em class="property">static</em> <em class="property">const</em> std::vector&lt;float&gt; <code class="sig-name descname">IMAGENET_MEAN</code> = {0.406, 0.456, 0.485}<a class="headerlink" href="#_CPPv4N3Ort13IMAGENET_MEANE" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>A BGR mean that helps normalize an input image. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt id="_CPPv4N3Ort12IMAGENET_STDE">
 <span id="_CPPv3N3Ort12IMAGENET_STDE"></span><span id="_CPPv2N3Ort12IMAGENET_STDE"></span><span id="Ort::IMAGENET_STD__std::vector:float:C"></span><span class="target" id="Constants_8hpp_1a79dbf8351f3842a5de4c29a8a269ac89"></span><em class="property">static</em> <em class="property">const</em> std::vector&lt;float&gt; <code class="sig-name descname">IMAGENET_STD</code> = {0.225, 0.224, 0.229}<a class="headerlink" href="#_CPPv4N3Ort12IMAGENET_STDE" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>A BGR standard deviation that helps normalize an input image. This is used in tandem with IMAGENET_NUM_CLASSES. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt id="_CPPv4N3Ort14MSCOCO_CLASSESE">
 <span id="_CPPv3N3Ort14MSCOCO_CLASSESE"></span><span id="_CPPv2N3Ort14MSCOCO_CLASSESE"></span><span id="Ort::MSCOCO_CLASSES__std::vector:ss:C"></span><span class="target" id="Constants_8hpp_1a69b4edc168430811f629a56d925fbae7"></span><em class="property">static</em> <em class="property">const</em> std::vector&lt;std::string&gt; <code class="sig-name descname">MSCOCO_CLASSES</code> = {&quot;background&quot;, &quot;person&quot;, &quot;bicycle&quot;, &quot;car&quot;, &quot;motorbike&quot;, &quot;aeroplane&quot;, &quot;bus&quot;, &quot;train&quot;, &quot;truck&quot;, &quot;boat&quot;, &quot;traffic light&quot;, &quot;fire hydrant&quot;, &quot;stop sign&quot;, &quot;parking meter&quot;, &quot;bench&quot;, &quot;bird&quot;, &quot;cat&quot;, &quot;dog&quot;, &quot;horse&quot;, &quot;sheep&quot;, &quot;cow&quot;, &quot;elephant&quot;, &quot;bear&quot;, &quot;zebra&quot;, &quot;giraffe&quot;, &quot;backpack&quot;, &quot;umbrella&quot;, &quot;handbag&quot;, &quot;tie&quot;, &quot;suitcase&quot;, &quot;frisbee&quot;, &quot;skis&quot;, &quot;snowboard&quot;, &quot;sports ball&quot;, &quot;kite&quot;, &quot;baseball bat&quot;, &quot;baseball glove&quot;, &quot;skateboard&quot;, &quot;surfboard&quot;, &quot;tennis racket&quot;, &quot;bottle&quot;, &quot;wine glass&quot;, &quot;cup&quot;, &quot;fork&quot;, &quot;knife&quot;, &quot;spoon&quot;, &quot;bowl&quot;, &quot;banana&quot;, &quot;apple&quot;, &quot;sandwich&quot;, &quot;orange&quot;, &quot;broccoli&quot;, &quot;carrot&quot;, &quot;hot dog&quot;, &quot;pizza&quot;, &quot;donut&quot;, &quot;cake&quot;, &quot;chair&quot;, &quot;sofa&quot;, &quot;pottedplant&quot;, &quot;bed&quot;, &quot;diningtable&quot;, &quot;toilet&quot;, &quot;tvmonitor&quot;, &quot;laptop&quot;, &quot;mouse&quot;, &quot;remote&quot;, &quot;keyboard&quot;, &quot;cell phone&quot;, &quot;microwave&quot;, &quot;oven&quot;, &quot;toaster&quot;, &quot;sink&quot;, &quot;refrigerator&quot;, &quot;book&quot;, &quot;clock&quot;, &quot;vase&quot;, &quot;scissors&quot;, &quot;teddy bear&quot;, &quot;hair drier&quot;, &quot;toothbrush&quot;}<a class="headerlink" href="#_CPPv4N3Ort14MSCOCO_CLASSESE" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>A vector of strings that contains all 81 object classes in MSCOCO Dataset. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt id="_CPPv4N3Ort18MSCOCO_NUM_CLASSESE">
 <span id="_CPPv3N3Ort18MSCOCO_NUM_CLASSESE"></span><span id="_CPPv2N3Ort18MSCOCO_NUM_CLASSESE"></span><span id="Ort::MSCOCO_NUM_CLASSES__int64_t"></span><span class="target" id="Constants_8hpp_1a4b10a3cabcbcb17341f20a1d1c3196b4"></span><em class="property">static</em> <em class="property">constexpr</em> int64_t <code class="sig-name descname">MSCOCO_NUM_CLASSES</code> = 81<a class="headerlink" href="#_CPPv4N3Ort18MSCOCO_NUM_CLASSESE" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 64 bit long integer that stores the number of MSCOCO object classes. This variable is used in examples/MaskRCNNApp.cpp. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt id="_CPPv4N3Ort18MSCOCO_COLOR_CHARTE">
 <span id="_CPPv3N3Ort18MSCOCO_COLOR_CHARTE"></span><span id="_CPPv2N3Ort18MSCOCO_COLOR_CHARTE"></span><span id="Ort::MSCOCO_COLOR_CHART__std::vector:std::array:i.3::C"></span><span class="target" id="Constants_8hpp_1a005adac9908b654c131608b3496a187c"></span><em class="property">static</em> <em class="property">const</em> std::vector&lt;std::array&lt;int, 3&gt;&gt; <code class="sig-name descname">MSCOCO_COLOR_CHART</code> = generateColorCharts(<a class="reference internal" href="#_CPPv4N3Ort18MSCOCO_NUM_CLASSESE" title="Ort::MSCOCO_NUM_CLASSES">MSCOCO_NUM_CLASSES</a>)<a class="headerlink" href="#_CPPv4N3Ort18MSCOCO_COLOR_CHARTE" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>A vector of array of 3 values that is mapped with cv::Scalar that corresponds to the MSCOCO object classes. It calls generateColorCharts function which is defined under Utility.hpp. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt id="_CPPv4N3Ort11VOC_CLASSESE">
 <span id="_CPPv3N3Ort11VOC_CLASSESE"></span><span id="_CPPv2N3Ort11VOC_CLASSESE"></span><span id="Ort::VOC_CLASSES__std::vector:ss:C"></span><span class="target" id="Constants_8hpp_1af3c728a3cbabf26d2d9559532bd4c1b7"></span><em class="property">static</em> <em class="property">const</em> std::vector&lt;std::string&gt; <code class="sig-name descname">VOC_CLASSES</code> = {&quot;aeroplane&quot;, &quot;bicycle&quot;, &quot;bird&quot;, &quot;boat&quot;, &quot;bottle&quot;, &quot;bus&quot;, &quot;car&quot;, &quot;cat&quot;, &quot;chair&quot;, &quot;cow&quot;, &quot;diningtable&quot;, &quot;dog&quot;, &quot;horse&quot;, &quot;motorbike&quot;, &quot;person&quot;, &quot;pottedplant&quot;, &quot;sheep&quot;, &quot;sofa&quot;, &quot;train&quot;, &quot;tvmonitor&quot;}<a class="headerlink" href="#_CPPv4N3Ort11VOC_CLASSESE" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>A vector of strings that contains all 20 object classes in Pascal VOC Dataset. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt id="_CPPv4N3Ort15VOC_NUM_CLASSESE">
 <span id="_CPPv3N3Ort15VOC_NUM_CLASSESE"></span><span id="_CPPv2N3Ort15VOC_NUM_CLASSESE"></span><span id="Ort::VOC_NUM_CLASSES__int64_t"></span><span class="target" id="Constants_8hpp_1ad8ea7bc2d58be7484622511f235e424f"></span><em class="property">static</em> <em class="property">constexpr</em> int64_t <code class="sig-name descname">VOC_NUM_CLASSES</code> = 20<a class="headerlink" href="#_CPPv4N3Ort15VOC_NUM_CLASSESE" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 64 bit long integer that stores the number of Pascal VOC object classes. This variable is used in examples/TinyYolov2App.cpp. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt id="_CPPv4N3Ort15VOC_COLOR_CHARTE">
 <span id="_CPPv3N3Ort15VOC_COLOR_CHARTE"></span><span id="_CPPv2N3Ort15VOC_COLOR_CHARTE"></span><span id="Ort::VOC_COLOR_CHART__std::vector:std::array:i.3::C"></span><span class="target" id="Constants_8hpp_1ac959d98c82414c7d3e7c6a7281798a3e"></span><em class="property">static</em> <em class="property">const</em> std::vector&lt;std::array&lt;int, 3&gt;&gt; <code class="sig-name descname">VOC_COLOR_CHART</code> = generateColorCharts(<a class="reference internal" href="#_CPPv4N3Ort15VOC_NUM_CLASSESE" title="Ort::VOC_NUM_CLASSES">VOC_NUM_CLASSES</a>)<a class="headerlink" href="#_CPPv4N3Ort15VOC_COLOR_CHARTE" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>A vector of array of 3 values that is mapped with cv::Scalar that corresponds to the Pascal VOC object classes. It calls generateColorCharts function which is defined under Utility.hpp. </p>
+</dd></dl>
 
 </div>
 </dd></dl>

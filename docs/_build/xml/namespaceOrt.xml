@@ -17,12 +17,13 @@
         <argsstring></argsstring>
         <name>IMAGENET_CLASSES</name>
         <briefdescription>
+<para>A vector of strings that contains all 1000 object classes in Imagenet Dataset. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="19" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="19" bodyend="-1"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="20" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="Constants_8hpp_1ac07ba90f78eebc64f284e86c2c5f68aa" prot="public" static="yes" constexpr="yes" mutable="no">
         <type>constexpr int64_t</type>
@@ -31,12 +32,13 @@
         <name>IMAGENET_NUM_CLASSES</name>
         <initializer>= 1000</initializer>
         <briefdescription>
+<para>A 64 bit long integer that stores the number of Imagenet object classes. This variable is used in <ref refid="TestImageClassification_8cpp" kindref="compound">examples/TestImageClassification.cpp</ref> and <ref refid="TestObjectDetection_8cpp" kindref="compound">examples/TestObjectDetection.cpp</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1024" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1024" bodyend="-1"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1027" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1027" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="Constants_8hpp_1a9e0d1d8122c9ea3c30a6023cc7199164" prot="public" static="yes" mutable="no">
         <type>const std::vector&lt; float &gt;</type>
@@ -45,12 +47,13 @@
         <name>IMAGENET_MEAN</name>
         <initializer>= {0.406, 0.456, 0.485}</initializer>
         <briefdescription>
+<para>A BGR mean that helps normalize an input image. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1027" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1027" bodyend="-1"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1030" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1030" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="Constants_8hpp_1a79dbf8351f3842a5de4c29a8a269ac89" prot="public" static="yes" mutable="no">
         <type>const std::vector&lt; float &gt;</type>
@@ -59,12 +62,13 @@
         <name>IMAGENET_STD</name>
         <initializer>= {0.225, 0.224, 0.229}</initializer>
         <briefdescription>
+<para>A BGR standard deviation that helps normalize an input image. This is used in tandem with IMAGENET_NUM_CLASSES. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1029" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1029" bodyend="-1"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1034" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1034" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="Constants_8hpp_1a69b4edc168430811f629a56d925fbae7" prot="public" static="yes" mutable="no">
         <type>const std::vector&lt; std::string &gt;</type>
@@ -85,12 +89,13 @@
     &quot;oven&quot;,         &quot;toaster&quot;,        &quot;sink&quot;,       &quot;refrigerator&quot;,  &quot;book&quot;,          &quot;clock&quot;,       &quot;vase&quot;,
     &quot;scissors&quot;,     &quot;teddy bear&quot;,     &quot;hair drier&quot;, &quot;toothbrush&quot;}</initializer>
         <briefdescription>
+<para>A vector of strings that contains all 81 object classes in MSCOCO Dataset. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1031" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1031" bodyend="-1"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1037" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1037" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="Constants_8hpp_1a4b10a3cabcbcb17341f20a1d1c3196b4" prot="public" static="yes" constexpr="yes" mutable="no">
         <type>constexpr int64_t</type>
@@ -99,12 +104,13 @@
         <name>MSCOCO_NUM_CLASSES</name>
         <initializer>= 81</initializer>
         <briefdescription>
+<para>A 64 bit long integer that stores the number of MSCOCO object classes. This variable is used in <ref refid="MaskRCNNApp_8cpp" kindref="compound">examples/MaskRCNNApp.cpp</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1045" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1045" bodyend="-1"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1053" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1053" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="Constants_8hpp_1a005adac9908b654c131608b3496a187c" prot="public" static="yes" mutable="no">
         <type>const std::vector&lt; std::array&lt; int, 3 &gt; &gt;</type>
@@ -113,12 +119,13 @@
         <name>MSCOCO_COLOR_CHART</name>
         <initializer>= generateColorCharts(MSCOCO_NUM_CLASSES)</initializer>
         <briefdescription>
+<para>A vector of array of 3 values that is mapped with cv::Scalar that corresponds to the MSCOCO object classes. It calls generateColorCharts function which is defined under Utility.hpp. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1047" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1047" bodyend="-1"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1058" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1058" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="Constants_8hpp_1af3c728a3cbabf26d2d9559532bd4c1b7" prot="public" static="yes" mutable="no">
         <type>const std::vector&lt; std::string &gt;</type>
@@ -129,12 +136,13 @@
     &quot;aeroplane&quot;,   &quot;bicycle&quot;, &quot;bird&quot;,  &quot;boat&quot;,      &quot;bottle&quot;, &quot;bus&quot;,         &quot;car&quot;,   &quot;cat&quot;,  &quot;chair&quot;, &quot;cow&quot;,
     &quot;diningtable&quot;, &quot;dog&quot;,     &quot;horse&quot;, &quot;motorbike&quot;, &quot;person&quot;, &quot;pottedplant&quot;, &quot;sheep&quot;, &quot;sofa&quot;, &quot;train&quot;, &quot;tvmonitor&quot;}</initializer>
         <briefdescription>
+<para>A vector of strings that contains all 20 object classes in Pascal VOC Dataset. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1049" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1049" bodyend="-1"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1061" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1061" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="Constants_8hpp_1ad8ea7bc2d58be7484622511f235e424f" prot="public" static="yes" constexpr="yes" mutable="no">
         <type>constexpr int64_t</type>
@@ -143,12 +151,13 @@
         <name>VOC_NUM_CLASSES</name>
         <initializer>= 20</initializer>
         <briefdescription>
+<para>A 64 bit long integer that stores the number of Pascal VOC object classes. This variable is used in <ref refid="TinyYolov2App_8cpp" kindref="compound">examples/TinyYolov2App.cpp</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1053" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1053" bodyend="-1"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1067" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1067" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="Constants_8hpp_1ac959d98c82414c7d3e7c6a7281798a3e" prot="public" static="yes" mutable="no">
         <type>const std::vector&lt; std::array&lt; int, 3 &gt; &gt;</type>
@@ -157,12 +166,13 @@
         <name>VOC_COLOR_CHART</name>
         <initializer>= generateColorCharts(VOC_NUM_CLASSES)</initializer>
         <briefdescription>
+<para>A vector of array of 3 values that is mapped with cv::Scalar that corresponds to the Pascal VOC object classes. It calls generateColorCharts function which is defined under Utility.hpp. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1055" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1055" bodyend="-1"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1072" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1072" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">

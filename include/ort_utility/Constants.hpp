@@ -16,6 +16,7 @@
 
 namespace Ort
 {
+/*! \brief A vector of strings that contains all 1000 object classes in Imagenet Dataset.*/
 static const std::vector<std::string> IMAGENET_CLASSES = {
     "tench, Tinca tinca",
     "goldfish, Carassius auratus",
@@ -1021,13 +1022,18 @@ static const std::vector<std::string> IMAGENET_CLASSES = {
     "toilet tissue, toilet paper, bathroom tissue",
 };
 
+/*! \brief A 64 bit long integer that stores the number of Imagenet object classes.
+This variable is used in examples/TestImageClassification.cpp and examples/TestObjectDetection.cpp.*/
 static constexpr int64_t IMAGENET_NUM_CLASSES = 1000;
 
-// BGR
+/*! \brief A BGR mean that helps normalize an input image.*/
 static const std::vector<float> IMAGENET_MEAN = {0.406, 0.456, 0.485};
 
+/*! \brief A BGR standard deviation that helps normalize an input image.
+This is used in tandem with IMAGENET_NUM_CLASSES.*/
 static const std::vector<float> IMAGENET_STD = {0.225, 0.224, 0.229};
 
+/*! \brief A vector of strings that contains all 81 object classes in MSCOCO Dataset.*/
 static const std::vector<std::string> MSCOCO_CLASSES = {
     "background",   "person",         "bicycle",    "car",           "motorbike",     "aeroplane",   "bus",
     "train",        "truck",          "boat",       "traffic light", "fire hydrant",  "stop sign",   "parking meter",
@@ -1042,15 +1048,26 @@ static const std::vector<std::string> MSCOCO_CLASSES = {
     "oven",         "toaster",        "sink",       "refrigerator",  "book",          "clock",       "vase",
     "scissors",     "teddy bear",     "hair drier", "toothbrush"};
 
+/*! \brief A 64 bit long integer that stores the number of MSCOCO object classes.
+This variable is used in examples/MaskRCNNApp.cpp.*/
 static constexpr int64_t MSCOCO_NUM_CLASSES = 81;
 
+/*! \brief A vector of array of 3 values that is mapped with cv::Scalar that corresponds
+to the MSCOCO object classes. It calls generateColorCharts function which is defined
+under Utility.hpp*/
 static const std::vector<std::array<int, 3>> MSCOCO_COLOR_CHART = generateColorCharts(MSCOCO_NUM_CLASSES);
 
+/*! \brief A vector of strings that contains all 20 object classes in Pascal VOC Dataset.*/
 static const std::vector<std::string> VOC_CLASSES = {
     "aeroplane",   "bicycle", "bird",  "boat",      "bottle", "bus",         "car",   "cat",  "chair", "cow",
     "diningtable", "dog",     "horse", "motorbike", "person", "pottedplant", "sheep", "sofa", "train", "tvmonitor"};
 
+/*! \brief A 64 bit long integer that stores the number of Pascal VOC object classes.
+This variable is used in examples/TinyYolov2App.cpp.*/
 static constexpr int64_t VOC_NUM_CLASSES = 20;
 
+/*! \brief A vector of array of 3 values that is mapped with cv::Scalar that corresponds
+to the Pascal VOC object classes. It calls generateColorCharts function which is defined
+under Utility.hpp*/
 static const std::vector<std::array<int, 3>> VOC_COLOR_CHART = generateColorCharts(VOC_NUM_CLASSES);
 }  // namespace Ort
