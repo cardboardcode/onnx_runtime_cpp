@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceOrt" kind="namespace" language="C++">
+    <compoundname>Ort</compoundname>
+    <innerclass refid="classOrt_1_1ImageClassificationOrtSessionHandler" prot="public">Ort::ImageClassificationOrtSessionHandler</innerclass>
+    <innerclass refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase" prot="public">Ort::ImageRecognitionOrtSessionHandlerBase</innerclass>
+    <innerclass refid="classOrt_1_1MaskRCNN" prot="public">Ort::MaskRCNN</innerclass>
+    <innerclass refid="classOrt_1_1ObjectDetectionOrtSessionHandler" prot="public">Ort::ObjectDetectionOrtSessionHandler</innerclass>
+    <innerclass refid="classOrt_1_1OrtSessionHandler" prot="public">Ort::OrtSessionHandler</innerclass>
+    <innerclass refid="classOrt_1_1TinyYolov2" prot="public">Ort::TinyYolov2</innerclass>
+    <innerclass refid="classOrt_1_1UltraLightFastGenericFaceDetector" prot="public">Ort::UltraLightFastGenericFaceDetector</innerclass>
+    <innerclass refid="classOrt_1_1Yolov3" prot="public">Ort::Yolov3</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="Constants_8hpp_1acf1902f4169fd38687b4bf25bb795664" prot="public" static="yes" mutable="no">
+        <type>const std::vector&lt; std::string &gt;</type>
+        <definition>const std::vector&lt;std::string&gt; Ort::IMAGENET_CLASSES</definition>
+        <argsstring></argsstring>
+        <name>IMAGENET_CLASSES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="19" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constants_8hpp_1ac07ba90f78eebc64f284e86c2c5f68aa" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int64_t</type>
+        <definition>constexpr int64_t Ort::IMAGENET_NUM_CLASSES</definition>
+        <argsstring></argsstring>
+        <name>IMAGENET_NUM_CLASSES</name>
+        <initializer>= 1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1024" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1024" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constants_8hpp_1a9e0d1d8122c9ea3c30a6023cc7199164" prot="public" static="yes" mutable="no">
+        <type>const std::vector&lt; float &gt;</type>
+        <definition>const std::vector&lt;float&gt; Ort::IMAGENET_MEAN</definition>
+        <argsstring></argsstring>
+        <name>IMAGENET_MEAN</name>
+        <initializer>= {0.406, 0.456, 0.485}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1027" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1027" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constants_8hpp_1a79dbf8351f3842a5de4c29a8a269ac89" prot="public" static="yes" mutable="no">
+        <type>const std::vector&lt; float &gt;</type>
+        <definition>const std::vector&lt;float&gt; Ort::IMAGENET_STD</definition>
+        <argsstring></argsstring>
+        <name>IMAGENET_STD</name>
+        <initializer>= {0.225, 0.224, 0.229}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1029" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1029" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constants_8hpp_1a69b4edc168430811f629a56d925fbae7" prot="public" static="yes" mutable="no">
+        <type>const std::vector&lt; std::string &gt;</type>
+        <definition>const std::vector&lt;std::string&gt; Ort::MSCOCO_CLASSES</definition>
+        <argsstring></argsstring>
+        <name>MSCOCO_CLASSES</name>
+        <initializer>= {
+    &quot;background&quot;,   &quot;person&quot;,         &quot;bicycle&quot;,    &quot;car&quot;,           &quot;motorbike&quot;,     &quot;aeroplane&quot;,   &quot;bus&quot;,
+    &quot;train&quot;,        &quot;truck&quot;,          &quot;boat&quot;,       &quot;traffic light&quot;, &quot;fire hydrant&quot;,  &quot;stop sign&quot;,   &quot;parking meter&quot;,
+    &quot;bench&quot;,        &quot;bird&quot;,           &quot;cat&quot;,        &quot;dog&quot;,           &quot;horse&quot;,         &quot;sheep&quot;,       &quot;cow&quot;,
+    &quot;elephant&quot;,     &quot;bear&quot;,           &quot;zebra&quot;,      &quot;giraffe&quot;,       &quot;backpack&quot;,      &quot;umbrella&quot;,    &quot;handbag&quot;,
+    &quot;tie&quot;,          &quot;suitcase&quot;,       &quot;frisbee&quot;,    &quot;skis&quot;,          &quot;snowboard&quot;,     &quot;sports ball&quot;, &quot;kite&quot;,
+    &quot;baseball bat&quot;, &quot;baseball glove&quot;, &quot;skateboard&quot;, &quot;surfboard&quot;,     &quot;tennis racket&quot;, &quot;bottle&quot;,      &quot;wine glass&quot;,
+    &quot;cup&quot;,          &quot;fork&quot;,           &quot;knife&quot;,      &quot;spoon&quot;,         &quot;bowl&quot;,          &quot;banana&quot;,      &quot;apple&quot;,
+    &quot;sandwich&quot;,     &quot;orange&quot;,         &quot;broccoli&quot;,   &quot;carrot&quot;,        &quot;hot dog&quot;,       &quot;pizza&quot;,       &quot;donut&quot;,
+    &quot;cake&quot;,         &quot;chair&quot;,          &quot;sofa&quot;,       &quot;pottedplant&quot;,   &quot;bed&quot;,           &quot;diningtable&quot;, &quot;toilet&quot;,
+    &quot;tvmonitor&quot;,    &quot;laptop&quot;,         &quot;mouse&quot;,      &quot;remote&quot;,        &quot;keyboard&quot;,      &quot;cell phone&quot;,  &quot;microwave&quot;,
+    &quot;oven&quot;,         &quot;toaster&quot;,        &quot;sink&quot;,       &quot;refrigerator&quot;,  &quot;book&quot;,          &quot;clock&quot;,       &quot;vase&quot;,
+    &quot;scissors&quot;,     &quot;teddy bear&quot;,     &quot;hair drier&quot;, &quot;toothbrush&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1031" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1031" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constants_8hpp_1a4b10a3cabcbcb17341f20a1d1c3196b4" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int64_t</type>
+        <definition>constexpr int64_t Ort::MSCOCO_NUM_CLASSES</definition>
+        <argsstring></argsstring>
+        <name>MSCOCO_NUM_CLASSES</name>
+        <initializer>= 81</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1045" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1045" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constants_8hpp_1a005adac9908b654c131608b3496a187c" prot="public" static="yes" mutable="no">
+        <type>const std::vector&lt; std::array&lt; int, 3 &gt; &gt;</type>
+        <definition>const std::vector&lt;std::array&lt;int, 3&gt; &gt; Ort::MSCOCO_COLOR_CHART</definition>
+        <argsstring></argsstring>
+        <name>MSCOCO_COLOR_CHART</name>
+        <initializer>= generateColorCharts(MSCOCO_NUM_CLASSES)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1047" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1047" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constants_8hpp_1af3c728a3cbabf26d2d9559532bd4c1b7" prot="public" static="yes" mutable="no">
+        <type>const std::vector&lt; std::string &gt;</type>
+        <definition>const std::vector&lt;std::string&gt; Ort::VOC_CLASSES</definition>
+        <argsstring></argsstring>
+        <name>VOC_CLASSES</name>
+        <initializer>= {
+    &quot;aeroplane&quot;,   &quot;bicycle&quot;, &quot;bird&quot;,  &quot;boat&quot;,      &quot;bottle&quot;, &quot;bus&quot;,         &quot;car&quot;,   &quot;cat&quot;,  &quot;chair&quot;, &quot;cow&quot;,
+    &quot;diningtable&quot;, &quot;dog&quot;,     &quot;horse&quot;, &quot;motorbike&quot;, &quot;person&quot;, &quot;pottedplant&quot;, &quot;sheep&quot;, &quot;sofa&quot;, &quot;train&quot;, &quot;tvmonitor&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1049" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1049" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constants_8hpp_1ad8ea7bc2d58be7484622511f235e424f" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int64_t</type>
+        <definition>constexpr int64_t Ort::VOC_NUM_CLASSES</definition>
+        <argsstring></argsstring>
+        <name>VOC_NUM_CLASSES</name>
+        <initializer>= 20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1053" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1053" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Constants_8hpp_1ac959d98c82414c7d3e7c6a7281798a3e" prot="public" static="yes" mutable="no">
+        <type>const std::vector&lt; std::array&lt; int, 3 &gt; &gt;</type>
+        <definition>const std::vector&lt;std::array&lt;int, 3&gt; &gt; Ort::VOC_COLOR_CHART</definition>
+        <argsstring></argsstring>
+        <name>VOC_COLOR_CHART</name>
+        <initializer>= generateColorCharts(VOC_NUM_CLASSES)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="1055" column="26" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" bodystart="1055" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="include_2ort__utility_2Utility_8hpp_1aa2535c75b4ec0497ceda787a821b294a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>template&lt; typename, typename=std::allocator&lt; T &gt;&gt; class</type>
+            <declname>Container</declname>
+            <defname>Container</defname>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; Ort::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Container&lt; T &gt; &amp;container)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const Container&lt; T &gt; &amp;</type>
+          <declname>container</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Utility.hpp" line="67" column="1" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Utility.hpp" bodystart="67" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2ort__utility_2Utility_8hpp_1abf6c1cb7d27b34247e8c3430e1c64ab3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ort::softmax</definition>
+        <argsstring>(float *input, const size_t inputLen)</argsstring>
+        <name>softmax</name>
+        <param>
+          <type>float *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>inputLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Utility.hpp" line="77" column="13" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Utility.hpp" bodystart="77" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2ort__utility_2Utility_8hpp_1a83938fa9b6900fa43b93a1c240214111" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Ort::sigmoid</definition>
+        <argsstring>(const float x)</argsstring>
+        <name>sigmoid</name>
+        <param>
+          <type>const float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Utility.hpp" line="90" column="14" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Utility.hpp" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2ort__utility_2Utility_8hpp_1a6c88a61ecee0a0ba1601664cfbed9758" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; uint64_t &gt;</type>
+        <definition>std::vector&lt;uint64_t&gt; Ort::nms</definition>
+        <argsstring>(const std::vector&lt; std::array&lt; float, 4 &gt;&gt; &amp;bboxes, const std::vector&lt; float &gt; &amp;scores, const float overlapThresh=0.45, const uint64_t topK=std::numeric_limits&lt; uint64_t &gt;::max())</argsstring>
+        <name>nms</name>
+        <param>
+          <type>const std::vector&lt; std::array&lt; float, 4 &gt;&gt; &amp;</type>
+          <declname>bboxes</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>scores</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>overlapThresh</declname>
+          <defval>0.45</defval>
+        </param>
+        <param>
+          <type>const uint64_t</type>
+          <declname>topK</declname>
+          <defval>std::numeric_limits&lt; uint64_t &gt;::max()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Utility.hpp" line="95" column="20" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Utility.hpp" bodystart="95" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2ort__utility_2Utility_8hpp_1a41f62ba2c081f68146787153f503cf54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::array&lt; int, 3 &gt; &gt;</type>
+        <definition>std::vector&lt;std::array&lt;int, 3&gt; &gt; Ort::generateColorCharts</definition>
+        <argsstring>(const uint16_t numClasses=1000, const uint16_t seed=255)</argsstring>
+        <name>generateColorCharts</name>
+        <param>
+          <type>const uint16_t</type>
+          <declname>numClasses</declname>
+          <defval>1000</defval>
+        </param>
+        <param>
+          <type>const uint16_t</type>
+          <declname>seed</declname>
+          <defval>255</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Utility.hpp" line="163" column="20" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Utility.hpp" bodystart="163" bodyend="173"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/Constants.hpp" line="18" column="1"/>
+  </compounddef>
+</doxygen>

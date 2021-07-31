@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOrt_1_1ImageRecognitionOrtSessionHandlerBase" kind="class" language="C++" prot="public">
+    <compoundname>Ort::ImageRecognitionOrtSessionHandlerBase</compoundname>
+    <basecompoundref refid="classOrt_1_1OrtSessionHandler" prot="public" virt="non-virtual">Ort::OrtSessionHandler</basecompoundref>
+    <derivedcompoundref refid="classOrt_1_1ImageClassificationOrtSessionHandler" prot="public" virt="non-virtual">Ort::ImageClassificationOrtSessionHandler</derivedcompoundref>
+    <derivedcompoundref refid="classOrt_1_1MaskRCNN" prot="public" virt="non-virtual">Ort::MaskRCNN</derivedcompoundref>
+    <derivedcompoundref refid="classOrt_1_1ObjectDetectionOrtSessionHandler" prot="public" virt="non-virtual">Ort::ObjectDetectionOrtSessionHandler</derivedcompoundref>
+    <derivedcompoundref refid="classOrt_1_1TinyYolov2" prot="public" virt="non-virtual">Ort::TinyYolov2</derivedcompoundref>
+    <derivedcompoundref refid="classOrt_1_1UltraLightFastGenericFaceDetector" prot="public" virt="non-virtual">Ort::UltraLightFastGenericFaceDetector</derivedcompoundref>
+    <derivedcompoundref refid="classOrt_1_1Yolov3" prot="public" virt="non-virtual">Ort::Yolov3</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a4e37fc918d6f31fa41cade7ea7443e5a" prot="protected" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t Ort::ImageRecognitionOrtSessionHandlerBase::m_numClasses</definition>
+        <argsstring></argsstring>
+        <name>m_numClasses</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="52" column="20" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1acd5160d64e0c433bdff286497b56e322" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; Ort::ImageRecognitionOrtSessionHandlerBase::m_classNames</definition>
+        <argsstring></argsstring>
+        <name>m_classNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="53" column="17" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1ae355622b6602addc7158d994f8c350a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Ort::ImageRecognitionOrtSessionHandlerBase::ImageRecognitionOrtSessionHandlerBase</definition>
+        <argsstring>(const uint16_t numClasses, const std::string &amp;modelPath, const std::optional&lt; size_t &gt; &amp;gpuIdx=std::nullopt, const std::optional&lt; std::vector&lt; std::vector&lt; int64_t &gt;&gt;&gt; &amp;inputShapes=std::nullopt)</argsstring>
+        <name>ImageRecognitionOrtSessionHandlerBase</name>
+        <param>
+          <type>const uint16_t</type>
+          <declname>numClasses</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>modelPath</declname>
+        </param>
+        <param>
+          <type>const std::optional&lt; size_t &gt; &amp;</type>
+          <declname>gpuIdx</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <param>
+          <type>const std::optional&lt; std::vector&lt; std::vector&lt; int64_t &gt;&gt;&gt; &amp;</type>
+          <declname>inputShapes</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="23" column="5" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/ImageRecognitionOrtSessionHandlerBase.cpp" bodystart="18" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a06bb4e8775c549cf020b07dfb70abb52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Ort::ImageRecognitionOrtSessionHandlerBase::~ImageRecognitionOrtSessionHandlerBase</definition>
+        <argsstring>()</argsstring>
+        <name>~ImageRecognitionOrtSessionHandlerBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="29" column="5" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/ImageRecognitionOrtSessionHandlerBase.cpp" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a0ea5184de97dc72e718d9fd78fdf5186" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ort::ImageRecognitionOrtSessionHandlerBase::initClassNames</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;classNames)</argsstring>
+        <name>initClassNames</name>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>classNames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="31" column="10" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/ImageRecognitionOrtSessionHandlerBase.cpp" bodystart="40" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a11f8a0fa6a257b4876996d631475627e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Ort::ImageRecognitionOrtSessionHandlerBase::preprocess</definition>
+        <argsstring>(float *dst, const unsigned char *src, const int64_t targetImgWidth, const int64_t targetImgHeight, const int numChanels, const std::vector&lt; float &gt; &amp;meanVal={}, const std::vector&lt; float &gt; &amp;stdVal={}) const</argsstring>
+        <name>preprocess</name>
+        <param>
+          <type>float *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>const int64_t</type>
+          <declname>targetImgWidth</declname>
+        </param>
+        <param>
+          <type>const int64_t</type>
+          <declname>targetImgHeight</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>numChanels</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>meanVal</declname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>stdVal</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="33" column="18" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/ImageRecognitionOrtSessionHandlerBase.cpp" bodystart="49" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a13e637ab5f5da6765f633de57c29fcbf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t Ort::ImageRecognitionOrtSessionHandlerBase::numClasses</definition>
+        <argsstring>() const</argsstring>
+        <name>numClasses</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="41" column="14" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1adbacf383d7c9c7470f0dd70560aade36" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; std::string &gt; &amp;</type>
+        <definition>const std::vector&lt;std::string&gt;&amp; Ort::ImageRecognitionOrtSessionHandlerBase::classNames</definition>
+        <argsstring>() const</argsstring>
+        <name>classNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="46" column="23" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>Ort::TinyYolov2</label>
+        <link refid="classOrt_1_1TinyYolov2"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Ort::UltraLightFastGenericFaceDetector</label>
+        <link refid="classOrt_1_1UltraLightFastGenericFaceDetector"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Ort::OrtSessionHandler</label>
+        <link refid="classOrt_1_1OrtSessionHandler"/>
+      </node>
+      <node id="5">
+        <label>Ort::ObjectDetectionOrtSessionHandler</label>
+        <link refid="classOrt_1_1ObjectDetectionOrtSessionHandler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Ort::ImageClassificationOrtSessionHandler</label>
+        <link refid="classOrt_1_1ImageClassificationOrtSessionHandler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Ort::Yolov3</label>
+        <link refid="classOrt_1_1Yolov3"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Ort::MaskRCNN</label>
+        <link refid="classOrt_1_1MaskRCNN"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Ort::ImageRecognitionOrtSessionHandlerBase</label>
+        <link refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Ort::OrtSessionHandler</label>
+        <link refid="classOrt_1_1OrtSessionHandler"/>
+      </node>
+      <node id="1">
+        <label>Ort::ImageRecognitionOrtSessionHandlerBase</label>
+        <link refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="21" column="1" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" bodystart="20" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1adbacf383d7c9c7470f0dd70560aade36" prot="public" virt="non-virtual"><scope>Ort::ImageRecognitionOrtSessionHandlerBase</scope><name>classNames</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1ae50019f6148484bfb802f76bc2ae2204" prot="public" virt="non-virtual"><scope>Ort::ImageRecognitionOrtSessionHandlerBase</scope><name>DataOutputType</name></member>
+      <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1ae355622b6602addc7158d994f8c350a3" prot="public" virt="non-virtual"><scope>Ort::ImageRecognitionOrtSessionHandlerBase</scope><name>ImageRecognitionOrtSessionHandlerBase</name></member>
+      <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a0ea5184de97dc72e718d9fd78fdf5186" prot="public" virt="non-virtual"><scope>Ort::ImageRecognitionOrtSessionHandlerBase</scope><name>initClassNames</name></member>
+      <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1acd5160d64e0c433bdff286497b56e322" prot="protected" virt="non-virtual"><scope>Ort::ImageRecognitionOrtSessionHandlerBase</scope><name>m_classNames</name></member>
+      <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a4e37fc918d6f31fa41cade7ea7443e5a" prot="protected" virt="non-virtual"><scope>Ort::ImageRecognitionOrtSessionHandlerBase</scope><name>m_numClasses</name></member>
+      <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a13e637ab5f5da6765f633de57c29fcbf" prot="public" virt="non-virtual"><scope>Ort::ImageRecognitionOrtSessionHandlerBase</scope><name>numClasses</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1aee4f8f2afd6f68e60c373d832768be6c" prot="public" virt="non-virtual"><scope>Ort::ImageRecognitionOrtSessionHandlerBase</scope><name>operator()</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1acc01cfadfefab7dee93a81fa9d4595ca" prot="public" virt="non-virtual"><scope>Ort::ImageRecognitionOrtSessionHandlerBase</scope><name>OrtSessionHandler</name></member>
+      <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a11f8a0fa6a257b4876996d631475627e" prot="public" virt="virtual"><scope>Ort::ImageRecognitionOrtSessionHandlerBase</scope><name>preprocess</name></member>
+      <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a06bb4e8775c549cf020b07dfb70abb52" prot="public" virt="non-virtual"><scope>Ort::ImageRecognitionOrtSessionHandlerBase</scope><name>~ImageRecognitionOrtSessionHandlerBase</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1afbd528ee0838f6470d00dc318f570245" prot="public" virt="non-virtual"><scope>Ort::ImageRecognitionOrtSessionHandlerBase</scope><name>~OrtSessionHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

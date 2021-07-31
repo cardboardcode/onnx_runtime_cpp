@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml" kind="class" language="C++" prot="public">
+    <compoundname>Ort::OrtSessionHandler::OrtSessionHandlerIml</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a2798e0f3691ad5f7c1d1bb1db34b6c36" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Ort::OrtSessionHandler::OrtSessionHandlerIml::m_modelPath</definition>
+        <argsstring></argsstring>
+        <name>m_modelPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" line="102" column="17" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a1bfacf2afcafb361ae23c3c40d410b0c" prot="private" static="no" mutable="no">
+        <type>Ort::Session</type>
+        <definition>Ort::Session Ort::OrtSessionHandler::OrtSessionHandlerIml::m_session</definition>
+        <argsstring></argsstring>
+        <name>m_session</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" line="104" column="18" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a46869ebc0845391248a08a866004489e" prot="private" static="no" mutable="no">
+        <type>Ort::Env</type>
+        <definition>Ort::Env Ort::OrtSessionHandler::OrtSessionHandlerIml::m_env</definition>
+        <argsstring></argsstring>
+        <name>m_env</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" line="105" column="14" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1affb27fbd056cf2c289c40503cffecf3d" prot="private" static="no" mutable="no">
+        <type>Ort::AllocatorWithDefaultOptions</type>
+        <definition>Ort::AllocatorWithDefaultOptions Ort::OrtSessionHandler::OrtSessionHandlerIml::m_ortAllocator</definition>
+        <argsstring></argsstring>
+        <name>m_ortAllocator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" line="106" column="38" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a3536578acc8305a9638d5a602c6cc422" prot="private" static="no" mutable="no">
+        <type>std::optional&lt; size_t &gt;</type>
+        <definition>std::optional&lt;size_t&gt; Ort::OrtSessionHandler::OrtSessionHandlerIml::m_gpuIdx</definition>
+        <argsstring></argsstring>
+        <name>m_gpuIdx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" line="108" column="19" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1ae7ed67f333bc8ecbf69f86aa3eadc81c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int64_t &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int64_t&gt; &gt; Ort::OrtSessionHandler::OrtSessionHandlerIml::m_inputShapes</definition>
+        <argsstring></argsstring>
+        <name>m_inputShapes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" line="110" column="17" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a0b579be7dad1a7f105b00399ffa19e16" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int64_t &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int64_t&gt; &gt; Ort::OrtSessionHandler::OrtSessionHandlerIml::m_outputShapes</definition>
+        <argsstring></argsstring>
+        <name>m_outputShapes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" line="111" column="17" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a58ef8d88a976ac71e22c72a0ff41e378" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int64_t &gt;</type>
+        <definition>std::vector&lt;int64_t&gt; Ort::OrtSessionHandler::OrtSessionHandlerIml::m_inputTensorSizes</definition>
+        <argsstring></argsstring>
+        <name>m_inputTensorSizes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" line="113" column="17" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1aee2d76100192b8476382f9d6c3238f27" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int64_t &gt;</type>
+        <definition>std::vector&lt;int64_t&gt; Ort::OrtSessionHandler::OrtSessionHandlerIml::m_outputTensorSizes</definition>
+        <argsstring></argsstring>
+        <name>m_outputTensorSizes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" line="114" column="17" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a42e80f30247209acad3abe914021745b" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Ort::OrtSessionHandler::OrtSessionHandlerIml::m_numInputs</definition>
+        <argsstring></argsstring>
+        <name>m_numInputs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" line="116" column="13" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a52b9aa2056b3c6bf5b10f1153696d419" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Ort::OrtSessionHandler::OrtSessionHandlerIml::m_numOutputs</definition>
+        <argsstring></argsstring>
+        <name>m_numOutputs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" line="117" column="13" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a8fe4a0cd6dcbd56df09461f0def32fbc" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; char * &gt;</type>
+        <definition>std::vector&lt;char*&gt; Ort::OrtSessionHandler::OrtSessionHandlerIml::m_inputNodeNames</definition>
+        <argsstring></argsstring>
+        <name>m_inputNodeNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" line="119" column="17" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1ab79484c2a1c5de373d35992c0cbd995d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; char * &gt;</type>
+        <definition>std::vector&lt;char*&gt; Ort::OrtSessionHandler::OrtSessionHandlerIml::m_outputNodeNames</definition>
+        <argsstring></argsstring>
+        <name>m_outputNodeNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" line="120" column="17" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a690bbd68775762332afc2d6729bbfadc" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Ort::OrtSessionHandler::OrtSessionHandlerIml::m_inputShapesProvided</definition>
+        <argsstring></argsstring>
+        <name>m_inputShapesProvided</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" line="122" column="10" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a271b2f3b6083f6cecef625ee0ca4122a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Ort::OrtSessionHandler::OrtSessionHandlerIml::OrtSessionHandlerIml</definition>
+        <argsstring>(const std::string &amp;modelPath, const std::optional&lt; size_t &gt; &amp;gpuIdx, const std::optional&lt; std::vector&lt; std::vector&lt; int64_t &gt;&gt;&gt; &amp;inputShapes)</argsstring>
+        <name>OrtSessionHandlerIml</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>modelPath</declname>
+        </param>
+        <param>
+          <type>const std::optional&lt; size_t &gt; &amp;</type>
+          <declname>gpuIdx</declname>
+        </param>
+        <param>
+          <type>const std::optional&lt; std::vector&lt; std::vector&lt; int64_t &gt;&gt;&gt; &amp;</type>
+          <declname>inputShapes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" line="90" column="5" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" bodystart="149" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1aa86344e1e9ca97daf2d5a429c43a2780" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Ort::OrtSessionHandler::OrtSessionHandlerIml::~OrtSessionHandlerIml</definition>
+        <argsstring>()</argsstring>
+        <name>~OrtSessionHandlerIml</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" line="93" column="5" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" bodystart="175" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1ad71ae38af75741692107d4521cafcba2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classOrt_1_1OrtSessionHandler_1ae50019f6148484bfb802f76bc2ae2204" kindref="member">DataOutputType</ref> &gt;</type>
+        <definition>std::vector&lt; OrtSessionHandler::DataOutputType &gt; Ort::OrtSessionHandler::OrtSessionHandlerIml::operator()</definition>
+        <argsstring>(const std::vector&lt; float * &gt; &amp;inputData)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const std::vector&lt; float * &gt; &amp;</type>
+          <declname>inputData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" line="95" column="17" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" bodystart="273" bodyend="305"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1afaa3835cf9a0df8e0c9cf4dfe790a993" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ort::OrtSessionHandler::OrtSessionHandlerIml::initSession</definition>
+        <argsstring>()</argsstring>
+        <name>initSession</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" line="98" column="10" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" bodystart="190" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a62e85ced1084f2f50356499638e8c419" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ort::OrtSessionHandler::OrtSessionHandlerIml::initModelInfo</definition>
+        <argsstring>()</argsstring>
+        <name>initModelInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" line="99" column="10" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" bodystart="218" bodyend="270"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" line="88" column="1" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/OrtSessionHandler.cpp" bodystart="87" bodyend="123"/>
+    <listofallmembers>
+      <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a62e85ced1084f2f50356499638e8c419" prot="private" virt="non-virtual"><scope>Ort::OrtSessionHandler::OrtSessionHandlerIml</scope><name>initModelInfo</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1afaa3835cf9a0df8e0c9cf4dfe790a993" prot="private" virt="non-virtual"><scope>Ort::OrtSessionHandler::OrtSessionHandlerIml</scope><name>initSession</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a46869ebc0845391248a08a866004489e" prot="private" virt="non-virtual"><scope>Ort::OrtSessionHandler::OrtSessionHandlerIml</scope><name>m_env</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a3536578acc8305a9638d5a602c6cc422" prot="private" virt="non-virtual"><scope>Ort::OrtSessionHandler::OrtSessionHandlerIml</scope><name>m_gpuIdx</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a8fe4a0cd6dcbd56df09461f0def32fbc" prot="private" virt="non-virtual"><scope>Ort::OrtSessionHandler::OrtSessionHandlerIml</scope><name>m_inputNodeNames</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1ae7ed67f333bc8ecbf69f86aa3eadc81c" prot="private" virt="non-virtual"><scope>Ort::OrtSessionHandler::OrtSessionHandlerIml</scope><name>m_inputShapes</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a690bbd68775762332afc2d6729bbfadc" prot="private" virt="non-virtual"><scope>Ort::OrtSessionHandler::OrtSessionHandlerIml</scope><name>m_inputShapesProvided</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a58ef8d88a976ac71e22c72a0ff41e378" prot="private" virt="non-virtual"><scope>Ort::OrtSessionHandler::OrtSessionHandlerIml</scope><name>m_inputTensorSizes</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a2798e0f3691ad5f7c1d1bb1db34b6c36" prot="private" virt="non-virtual"><scope>Ort::OrtSessionHandler::OrtSessionHandlerIml</scope><name>m_modelPath</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a42e80f30247209acad3abe914021745b" prot="private" virt="non-virtual"><scope>Ort::OrtSessionHandler::OrtSessionHandlerIml</scope><name>m_numInputs</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a52b9aa2056b3c6bf5b10f1153696d419" prot="private" virt="non-virtual"><scope>Ort::OrtSessionHandler::OrtSessionHandlerIml</scope><name>m_numOutputs</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1affb27fbd056cf2c289c40503cffecf3d" prot="private" virt="non-virtual"><scope>Ort::OrtSessionHandler::OrtSessionHandlerIml</scope><name>m_ortAllocator</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1ab79484c2a1c5de373d35992c0cbd995d" prot="private" virt="non-virtual"><scope>Ort::OrtSessionHandler::OrtSessionHandlerIml</scope><name>m_outputNodeNames</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a0b579be7dad1a7f105b00399ffa19e16" prot="private" virt="non-virtual"><scope>Ort::OrtSessionHandler::OrtSessionHandlerIml</scope><name>m_outputShapes</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1aee2d76100192b8476382f9d6c3238f27" prot="private" virt="non-virtual"><scope>Ort::OrtSessionHandler::OrtSessionHandlerIml</scope><name>m_outputTensorSizes</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a1bfacf2afcafb361ae23c3c40d410b0c" prot="private" virt="non-virtual"><scope>Ort::OrtSessionHandler::OrtSessionHandlerIml</scope><name>m_session</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1ad71ae38af75741692107d4521cafcba2" prot="public" virt="non-virtual"><scope>Ort::OrtSessionHandler::OrtSessionHandlerIml</scope><name>operator()</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a271b2f3b6083f6cecef625ee0ca4122a" prot="public" virt="non-virtual"><scope>Ort::OrtSessionHandler::OrtSessionHandlerIml</scope><name>OrtSessionHandlerIml</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1aa86344e1e9ca97daf2d5a429c43a2780" prot="public" virt="non-virtual"><scope>Ort::OrtSessionHandler::OrtSessionHandlerIml</scope><name>~OrtSessionHandlerIml</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

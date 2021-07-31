@@ -1,0 +1,5 @@
+<map id="Ort::ObjectDetectionOrtSessionHandler" name="Ort::ObjectDetectionOrtSessionHandler">
+<area shape="rect" id="node1" title=" " alt="" coords="5,169,231,211"/>
+<area shape="rect" id="node2" href="$classOrt_1_1ImageRecognitionOrtSessionHandlerBase.html" title=" " alt="" coords="24,80,212,121"/>
+<area shape="rect" id="node3" href="$classOrt_1_1OrtSessionHandler.html" title="An OrtSessionHandler class object. This class serves as the base parent class which is inherited by c..." alt="" coords="33,5,203,32"/>
+</map>

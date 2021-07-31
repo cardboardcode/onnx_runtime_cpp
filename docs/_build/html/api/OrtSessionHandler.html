@@ -1,0 +1,361 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OrtSessionHandler &mdash; onnx_runtime_cpp  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ort_utility" href="ort_utility.html" />
+    <link rel="prev" title="ObjectDetectionOrtSessionHandler" href="ObjectDetectionOrtSessionHandler.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> onnx_runtime_cpp
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Welcome to onnx_runtime_cpp’s documentation!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Constants.html">Constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ImageClassificationOrtSessionHandler.html">ImageClassificationOrtSessionHandler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ImageRecognitionOrtSessionHandlerBase.html">ImageRecognitionOrtSessionHandlerBase</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ObjectDetectionOrtSessionHandler.html">ObjectDetectionOrtSessionHandler</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">OrtSessionHandler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ort_utility.html">ort_utility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utility.html">Utility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ImageClassificationOrtSessionHandler.html">ImageClassificationOrtSessionHandler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ImageRecognitionOrtSessionHandlerBase.html">ImageRecognitionOrtSessionHandlerBase</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ObjectDetectionOrtSessionHandler.html">ObjectDetectionOrtSessionHandler</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">OrtSessionHandler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MaskRCNN.html">MaskRCNN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MaskRCNN.html">MaskRCNN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MaskRCNNApp.html">MaskRCNNApp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TestImageClassification.html">TestImageClassification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TestObjectDetection.html">TestObjectDetection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TinyYolov2.html">TinyYolov2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TinyYolov2.html">TinyYolov2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TinyYolov2App.html">TinyYolov2App</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UltraLightFastGenericFaceDetector.html">UltraLightFastGenericFaceDetector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UltraLightFastGenericFaceDetector.html">UltraLightFastGenericFaceDetector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UltraLightFastGenericFaceDetectorApp.html">UltraLightFastGenericFaceDetectorApp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utility.html">Utility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Yolov3.html">Yolov3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Yolov3.html">Yolov3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Yolov3App.html">Yolov3App</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">onnx_runtime_cpp</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>OrtSessionHandler</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/OrtSessionHandler.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ortsessionhandler">
+<span id="api-ortsessionhandler"></span><h1>OrtSessionHandler<a class="headerlink" href="#ortsessionhandler" title="Permalink to this headline">¶</a></h1>
+<p>
+Copyright (c) organization <dl class="simple">
+<dt><strong>Author</strong></dt><dd><p>btran</p>
+</dd>
+<dt><strong>Date</strong></dt><dd><p>2020-04-19</p>
+</dd>
+</dl>
+</p>
+<dl class="cpp class">
+<dt id="_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerImlE">
+<span id="_CPPv3N3Ort17OrtSessionHandler20OrtSessionHandlerImlE"></span><span id="_CPPv2N3Ort17OrtSessionHandler20OrtSessionHandlerImlE"></span><span id="Ort::OrtSessionHandler::OrtSessionHandlerIml"></span><span class="target" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml"></span><em class="property">class </em><code class="sig-prename descclassname"><a class="reference internal" href="Constants.html#_CPPv43Ort" title="Ort">Ort</a>::OrtSessionHandler<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">OrtSessionHandlerIml</code><a class="headerlink" href="#_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerImlE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml20OrtSessionHandlerImlERKNSt6stringERKNSt8optionalI6size_tEERKNSt8optionalINSt6vectorINSt6vectorI7int64_tEEEEEE">
+<span id="_CPPv3N3Ort17OrtSessionHandler20OrtSessionHandlerIml20OrtSessionHandlerImlERKNSt6stringERKNSt8optionalI6size_tEERKNSt8optionalINSt6vectorINSt6vectorI7int64_tEEEEEE"></span><span id="_CPPv2N3Ort17OrtSessionHandler20OrtSessionHandlerIml20OrtSessionHandlerImlERKNSt6stringERKNSt8optionalI6size_tEERKNSt8optionalINSt6vectorINSt6vectorI7int64_tEEEEEE"></span><span id="Ort::OrtSessionHandler::OrtSessionHandlerIml::OrtSessionHandlerIml__ssCR.std::optional:s:CR.std::optional:std::vector:std::vector:int64_t:::CR"></span><span class="target" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a271b2f3b6083f6cecef625ee0ca4122a"></span><code class="sig-name descname">OrtSessionHandlerIml</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>modelPath</em>, <em class="property">const</em> std::optional&lt;size_t&gt; &amp;<em>gpuIdx</em>, <em class="property">const</em> std::optional&lt;std::vector&lt;std::vector&lt;int64_t&gt;&gt;&gt; &amp;<em>inputShapes</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml20OrtSessionHandlerImlERKNSt6stringERKNSt8optionalI6size_tEERKNSt8optionalINSt6vectorINSt6vectorI7int64_tEEEEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerImlD0Ev">
+<span id="_CPPv3N3Ort17OrtSessionHandler20OrtSessionHandlerImlD0Ev"></span><span id="_CPPv2N3Ort17OrtSessionHandler20OrtSessionHandlerImlD0Ev"></span><span id="Ort::OrtSessionHandler::OrtSessionHandlerIml::~OrtSessionHandlerIml"></span><span class="target" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1aa86344e1e9ca97daf2d5a429c43a2780"></span><code class="sig-name descname">~OrtSessionHandlerIml</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerImlD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerImlclERKNSt6vectorIPfEE">
+<span id="_CPPv3N3Ort17OrtSessionHandler20OrtSessionHandlerImlclERKNSt6vectorIPfEE"></span><span id="_CPPv2N3Ort17OrtSessionHandler20OrtSessionHandlerImlclERKNSt6vectorIPfEE"></span><span id="Ort::OrtSessionHandler::OrtSessionHandlerIml::call-operator__std::vector:floatP:CR"></span><span class="target" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1ad71ae38af75741692107d4521cafcba2"></span>std::vector&lt;DataOutputType&gt; <code class="sig-name descname">operator()</code><span class="sig-paren">(</span><em class="property">const</em> std::vector&lt;float*&gt; &amp;<em>inputData</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerImlclERKNSt6vectorIPfEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml11initSessionEv">
+<span id="_CPPv3N3Ort17OrtSessionHandler20OrtSessionHandlerIml11initSessionEv"></span><span id="_CPPv2N3Ort17OrtSessionHandler20OrtSessionHandlerIml11initSessionEv"></span><span id="Ort::OrtSessionHandler::OrtSessionHandlerIml::initSession"></span><span class="target" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1afaa3835cf9a0df8e0c9cf4dfe790a993"></span>void <code class="sig-name descname">initSession</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml11initSessionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml13initModelInfoEv">
+<span id="_CPPv3N3Ort17OrtSessionHandler20OrtSessionHandlerIml13initModelInfoEv"></span><span id="_CPPv2N3Ort17OrtSessionHandler20OrtSessionHandlerIml13initModelInfoEv"></span><span id="Ort::OrtSessionHandler::OrtSessionHandlerIml::initModelInfo"></span><span class="target" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a62e85ced1084f2f50356499638e8c419"></span>void <code class="sig-name descname">initModelInfo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml13initModelInfoEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt id="_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml11m_modelPathE">
+<span id="_CPPv3N3Ort17OrtSessionHandler20OrtSessionHandlerIml11m_modelPathE"></span><span id="_CPPv2N3Ort17OrtSessionHandler20OrtSessionHandlerIml11m_modelPathE"></span><span id="Ort::OrtSessionHandler::OrtSessionHandlerIml::m_modelPath__ss"></span><span class="target" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a2798e0f3691ad5f7c1d1bb1db34b6c36"></span>std::string <code class="sig-name descname">m_modelPath</code><a class="headerlink" href="#_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml11m_modelPathE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml9m_sessionE">
+<span id="_CPPv3N3Ort17OrtSessionHandler20OrtSessionHandlerIml9m_sessionE"></span><span id="_CPPv2N3Ort17OrtSessionHandler20OrtSessionHandlerIml9m_sessionE"></span><span id="Ort::OrtSessionHandler::OrtSessionHandlerIml::m_session__Ort::Session"></span><span class="target" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a1bfacf2afcafb361ae23c3c40d410b0c"></span><a class="reference internal" href="Constants.html#_CPPv43Ort" title="Ort">Ort</a>::Session <code class="sig-name descname">m_session</code><a class="headerlink" href="#_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml9m_sessionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml5m_envE">
+<span id="_CPPv3N3Ort17OrtSessionHandler20OrtSessionHandlerIml5m_envE"></span><span id="_CPPv2N3Ort17OrtSessionHandler20OrtSessionHandlerIml5m_envE"></span><span id="Ort::OrtSessionHandler::OrtSessionHandlerIml::m_env__Ort::Env"></span><span class="target" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a46869ebc0845391248a08a866004489e"></span><a class="reference internal" href="Constants.html#_CPPv43Ort" title="Ort">Ort</a>::Env <code class="sig-name descname">m_env</code><a class="headerlink" href="#_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml5m_envE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml14m_ortAllocatorE">
+<span id="_CPPv3N3Ort17OrtSessionHandler20OrtSessionHandlerIml14m_ortAllocatorE"></span><span id="_CPPv2N3Ort17OrtSessionHandler20OrtSessionHandlerIml14m_ortAllocatorE"></span><span id="Ort::OrtSessionHandler::OrtSessionHandlerIml::m_ortAllocator__Ort::AllocatorWithDefaultOptions"></span><span class="target" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1affb27fbd056cf2c289c40503cffecf3d"></span><a class="reference internal" href="Constants.html#_CPPv43Ort" title="Ort">Ort</a>::AllocatorWithDefaultOptions <code class="sig-name descname">m_ortAllocator</code><a class="headerlink" href="#_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml14m_ortAllocatorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml8m_gpuIdxE">
+<span id="_CPPv3N3Ort17OrtSessionHandler20OrtSessionHandlerIml8m_gpuIdxE"></span><span id="_CPPv2N3Ort17OrtSessionHandler20OrtSessionHandlerIml8m_gpuIdxE"></span><span id="Ort::OrtSessionHandler::OrtSessionHandlerIml::m_gpuIdx__std::optional:s:"></span><span class="target" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a3536578acc8305a9638d5a602c6cc422"></span>std::optional&lt;size_t&gt; <code class="sig-name descname">m_gpuIdx</code><a class="headerlink" href="#_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml8m_gpuIdxE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml13m_inputShapesE">
+<span id="_CPPv3N3Ort17OrtSessionHandler20OrtSessionHandlerIml13m_inputShapesE"></span><span id="_CPPv2N3Ort17OrtSessionHandler20OrtSessionHandlerIml13m_inputShapesE"></span><span id="Ort::OrtSessionHandler::OrtSessionHandlerIml::m_inputShapes__std::vector:std::vector:int64_t::"></span><span class="target" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1ae7ed67f333bc8ecbf69f86aa3eadc81c"></span>std::vector&lt;std::vector&lt;int64_t&gt;&gt; <code class="sig-name descname">m_inputShapes</code><a class="headerlink" href="#_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml13m_inputShapesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml14m_outputShapesE">
+<span id="_CPPv3N3Ort17OrtSessionHandler20OrtSessionHandlerIml14m_outputShapesE"></span><span id="_CPPv2N3Ort17OrtSessionHandler20OrtSessionHandlerIml14m_outputShapesE"></span><span id="Ort::OrtSessionHandler::OrtSessionHandlerIml::m_outputShapes__std::vector:std::vector:int64_t::"></span><span class="target" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a0b579be7dad1a7f105b00399ffa19e16"></span>std::vector&lt;std::vector&lt;int64_t&gt;&gt; <code class="sig-name descname">m_outputShapes</code><a class="headerlink" href="#_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml14m_outputShapesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml18m_inputTensorSizesE">
+<span id="_CPPv3N3Ort17OrtSessionHandler20OrtSessionHandlerIml18m_inputTensorSizesE"></span><span id="_CPPv2N3Ort17OrtSessionHandler20OrtSessionHandlerIml18m_inputTensorSizesE"></span><span id="Ort::OrtSessionHandler::OrtSessionHandlerIml::m_inputTensorSizes__std::vector:int64_t:"></span><span class="target" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a58ef8d88a976ac71e22c72a0ff41e378"></span>std::vector&lt;int64_t&gt; <code class="sig-name descname">m_inputTensorSizes</code><a class="headerlink" href="#_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml18m_inputTensorSizesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml19m_outputTensorSizesE">
+<span id="_CPPv3N3Ort17OrtSessionHandler20OrtSessionHandlerIml19m_outputTensorSizesE"></span><span id="_CPPv2N3Ort17OrtSessionHandler20OrtSessionHandlerIml19m_outputTensorSizesE"></span><span id="Ort::OrtSessionHandler::OrtSessionHandlerIml::m_outputTensorSizes__std::vector:int64_t:"></span><span class="target" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1aee2d76100192b8476382f9d6c3238f27"></span>std::vector&lt;int64_t&gt; <code class="sig-name descname">m_outputTensorSizes</code><a class="headerlink" href="#_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml19m_outputTensorSizesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml11m_numInputsE">
+<span id="_CPPv3N3Ort17OrtSessionHandler20OrtSessionHandlerIml11m_numInputsE"></span><span id="_CPPv2N3Ort17OrtSessionHandler20OrtSessionHandlerIml11m_numInputsE"></span><span id="Ort::OrtSessionHandler::OrtSessionHandlerIml::m_numInputs__uint8_t"></span><span class="target" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a42e80f30247209acad3abe914021745b"></span>uint8_t <code class="sig-name descname">m_numInputs</code><a class="headerlink" href="#_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml11m_numInputsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml12m_numOutputsE">
+<span id="_CPPv3N3Ort17OrtSessionHandler20OrtSessionHandlerIml12m_numOutputsE"></span><span id="_CPPv2N3Ort17OrtSessionHandler20OrtSessionHandlerIml12m_numOutputsE"></span><span id="Ort::OrtSessionHandler::OrtSessionHandlerIml::m_numOutputs__uint8_t"></span><span class="target" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a52b9aa2056b3c6bf5b10f1153696d419"></span>uint8_t <code class="sig-name descname">m_numOutputs</code><a class="headerlink" href="#_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml12m_numOutputsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml16m_inputNodeNamesE">
+<span id="_CPPv3N3Ort17OrtSessionHandler20OrtSessionHandlerIml16m_inputNodeNamesE"></span><span id="_CPPv2N3Ort17OrtSessionHandler20OrtSessionHandlerIml16m_inputNodeNamesE"></span><span id="Ort::OrtSessionHandler::OrtSessionHandlerIml::m_inputNodeNames__std::vector:cP:"></span><span class="target" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a8fe4a0cd6dcbd56df09461f0def32fbc"></span>std::vector&lt;char*&gt; <code class="sig-name descname">m_inputNodeNames</code><a class="headerlink" href="#_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml16m_inputNodeNamesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml17m_outputNodeNamesE">
+<span id="_CPPv3N3Ort17OrtSessionHandler20OrtSessionHandlerIml17m_outputNodeNamesE"></span><span id="_CPPv2N3Ort17OrtSessionHandler20OrtSessionHandlerIml17m_outputNodeNamesE"></span><span id="Ort::OrtSessionHandler::OrtSessionHandlerIml::m_outputNodeNames__std::vector:cP:"></span><span class="target" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1ab79484c2a1c5de373d35992c0cbd995d"></span>std::vector&lt;char*&gt; <code class="sig-name descname">m_outputNodeNames</code><a class="headerlink" href="#_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml17m_outputNodeNamesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml21m_inputShapesProvidedE">
+<span id="_CPPv3N3Ort17OrtSessionHandler20OrtSessionHandlerIml21m_inputShapesProvidedE"></span><span id="_CPPv2N3Ort17OrtSessionHandler20OrtSessionHandlerIml21m_inputShapesProvidedE"></span><span id="Ort::OrtSessionHandler::OrtSessionHandlerIml::m_inputShapesProvided__b"></span><span class="target" id="classOrt_1_1OrtSessionHandler_1_1OrtSessionHandlerIml_1a690bbd68775762332afc2d6729bbfadc"></span>bool <code class="sig-name descname">m_inputShapesProvided</code> = false<a class="headerlink" href="#_CPPv4N3Ort17OrtSessionHandler20OrtSessionHandlerIml21m_inputShapesProvidedE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp type">
+<dt id="_CPPv43Ort">
+<span id="_CPPv33Ort"></span><span id="_CPPv23Ort"></span><span id="Ort"></span><span class="target" id="namespaceOrt"></span><em class="property">namespace </em><code class="sig-name descname">Ort</code><br /></dt>
+<dd></dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ort_utility.html" class="btn btn-neutral float-right" title="ort_utility" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ObjectDetectionOrtSessionHandler.html" class="btn btn-neutral float-left" title="ObjectDetectionOrtSessionHandler" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021,                                           xmba15, Bey Hao Yun
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

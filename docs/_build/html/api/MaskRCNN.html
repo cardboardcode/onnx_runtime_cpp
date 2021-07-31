@@ -1,0 +1,293 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>MaskRCNN &mdash; onnx_runtime_cpp  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="MaskRCNNApp" href="MaskRCNNApp.html" />
+    <link rel="prev" title="Utility" href="Utility.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> onnx_runtime_cpp
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Welcome to onnx_runtime_cpp’s documentation!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Constants.html">Constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ImageClassificationOrtSessionHandler.html">ImageClassificationOrtSessionHandler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ImageRecognitionOrtSessionHandlerBase.html">ImageRecognitionOrtSessionHandlerBase</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ObjectDetectionOrtSessionHandler.html">ObjectDetectionOrtSessionHandler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OrtSessionHandler.html">OrtSessionHandler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ort_utility.html">ort_utility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utility.html">Utility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ImageClassificationOrtSessionHandler.html">ImageClassificationOrtSessionHandler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ImageRecognitionOrtSessionHandlerBase.html">ImageRecognitionOrtSessionHandlerBase</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ObjectDetectionOrtSessionHandler.html">ObjectDetectionOrtSessionHandler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OrtSessionHandler.html">OrtSessionHandler</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">MaskRCNN</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">MaskRCNN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MaskRCNNApp.html">MaskRCNNApp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TestImageClassification.html">TestImageClassification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TestObjectDetection.html">TestObjectDetection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TinyYolov2.html">TinyYolov2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TinyYolov2.html">TinyYolov2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TinyYolov2App.html">TinyYolov2App</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UltraLightFastGenericFaceDetector.html">UltraLightFastGenericFaceDetector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UltraLightFastGenericFaceDetector.html">UltraLightFastGenericFaceDetector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UltraLightFastGenericFaceDetectorApp.html">UltraLightFastGenericFaceDetectorApp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utility.html">Utility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Yolov3.html">Yolov3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Yolov3.html">Yolov3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Yolov3App.html">Yolov3App</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">onnx_runtime_cpp</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>MaskRCNN</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/MaskRCNN.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="maskrcnn">
+<span id="api-maskrcnn"></span><h1>MaskRCNN<a class="headerlink" href="#maskrcnn" title="Permalink to this headline">¶</a></h1>
+<p>
+Copyright (c) organization <dl class="simple">
+<dt><strong>Author</strong></dt><dd><p>btran</p>
+</dd>
+<dt><strong>Date</strong></dt><dd><p>2020-05-18</p>
+</dd>
+</dl>
+</p>
+<dl class="cpp type">
+<dt id="_CPPv43Ort">
+<span id="_CPPv33Ort"></span><span id="_CPPv23Ort"></span><span id="Ort"></span><span class="target" id="namespaceOrt"></span><em class="property">namespace </em><code class="sig-name descname">Ort</code><br /></dt>
+<dd><dl class="cpp class">
+<dt id="_CPPv4N3Ort8MaskRCNNE">
+<span id="_CPPv3N3Ort8MaskRCNNE"></span><span id="_CPPv2N3Ort8MaskRCNNE"></span><span id="Ort::MaskRCNN"></span><span class="target" id="classOrt_1_1MaskRCNN"></span><em class="property">class </em><code class="sig-name descname">MaskRCNN</code> : <em class="property">public</em> <a class="reference internal" href="Constants.html#_CPPv43Ort" title="Ort">Ort</a>::ImageRecognitionOrtSessionHandlerBase<a class="headerlink" href="#_CPPv4N3Ort8MaskRCNNE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N3Ort8MaskRCNN8MaskRCNNEK8uint16_tRKNSt6stringERKNSt8optionalI6size_tEERKNSt8optionalINSt6vectorINSt6vectorI7int64_tEEEEEE">
+<span id="_CPPv3N3Ort8MaskRCNN8MaskRCNNEK8uint16_tRKNSt6stringERKNSt8optionalI6size_tEERKNSt8optionalINSt6vectorINSt6vectorI7int64_tEEEEEE"></span><span id="_CPPv2N3Ort8MaskRCNN8MaskRCNNEK8uint16_tRKNSt6stringERKNSt8optionalI6size_tEERKNSt8optionalINSt6vectorINSt6vectorI7int64_tEEEEEE"></span><span id="Ort::MaskRCNN::MaskRCNN__uint16_tC.ssCR.std::optional:s:CR.std::optional:std::vector:std::vector:int64_t:::CR"></span><span class="target" id="classOrt_1_1MaskRCNN_1aba14232425d1274b4cc40843824cd59a"></span><code class="sig-name descname">MaskRCNN</code><span class="sig-paren">(</span><em class="property">const</em> uint16_t <em>numClasses</em>, <em class="property">const</em> std::string &amp;<em>modelPath</em>, <em class="property">const</em> std::optional&lt;size_t&gt; &amp;<em>gpuIdx</em> = std::nullopt, <em class="property">const</em> std::optional&lt;std::vector&lt;std::vector&lt;int64_t&gt;&gt;&gt; &amp;<em>inputShapes</em> = std::nullopt<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3Ort8MaskRCNN8MaskRCNNEK8uint16_tRKNSt6stringERKNSt8optionalI6size_tEERKNSt8optionalINSt6vectorINSt6vectorI7int64_tEEEEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N3Ort8MaskRCNND0Ev">
+<span id="_CPPv3N3Ort8MaskRCNND0Ev"></span><span id="_CPPv2N3Ort8MaskRCNND0Ev"></span><span id="Ort::MaskRCNN::~MaskRCNN"></span><span class="target" id="classOrt_1_1MaskRCNN_1aef09eb340e6fde660e80f08484fb26e5"></span><code class="sig-name descname">~MaskRCNN</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3Ort8MaskRCNND0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK3Ort8MaskRCNN10preprocessEPfPKfK7int64_tK7int64_tKi">
+<span id="_CPPv3NK3Ort8MaskRCNN10preprocessEPfPKfK7int64_tK7int64_tKi"></span><span id="_CPPv2NK3Ort8MaskRCNN10preprocessEPfPKfK7int64_tK7int64_tKi"></span><span id="Ort::MaskRCNN::preprocess__floatP.floatCP.int64_tC.int64_tC.iCC"></span><span class="target" id="classOrt_1_1MaskRCNN_1a17ec8f6032233e603ec231a8b9112c82"></span>void <code class="sig-name descname">preprocess</code><span class="sig-paren">(</span>float *<em>dst</em>, <em class="property">const</em> float *<em>src</em>, <em class="property">const</em> int64_t <em>targetImgWidth</em>, <em class="property">const</em> int64_t <em>targetImgHeight</em>, <em class="property">const</em> int <em>numChannels</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3Ort8MaskRCNN10preprocessEPfPKfK7int64_tK7int64_tKi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK3Ort8MaskRCNN10preprocessEPfRKN2cv3MatEK7int64_tK7int64_tKi">
+<span id="_CPPv3NK3Ort8MaskRCNN10preprocessEPfRKN2cv3MatEK7int64_tK7int64_tKi"></span><span id="_CPPv2NK3Ort8MaskRCNN10preprocessEPfRKN2cv3MatEK7int64_tK7int64_tKi"></span><span id="Ort::MaskRCNN::preprocess__floatP.cv::MatCR.int64_tC.int64_tC.iCC"></span><span class="target" id="classOrt_1_1MaskRCNN_1a9c5f6a34f1c0fed592eb50a7fa582934"></span>void <code class="sig-name descname">preprocess</code><span class="sig-paren">(</span>float *<em>dst</em>, <em class="property">const</em> cv::Mat &amp;<em>imgSrc</em>, <em class="property">const</em> int64_t <em>targetImgWidth</em>, <em class="property">const</em> int64_t <em>targetImgHeight</em>, <em class="property">const</em> int <em>numChannels</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3Ort8MaskRCNN10preprocessEPfRKN2cv3MatEK7int64_tK7int64_tKi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-attributes">Public Static Attributes</p>
+<dl class="cpp var">
+<dt id="_CPPv4N3Ort8MaskRCNN14MIN_IMAGE_SIZEE">
+<span id="_CPPv3N3Ort8MaskRCNN14MIN_IMAGE_SIZEE"></span><span id="_CPPv2N3Ort8MaskRCNN14MIN_IMAGE_SIZEE"></span><span id="Ort::MaskRCNN::MIN_IMAGE_SIZE__int64_t"></span><span class="target" id="classOrt_1_1MaskRCNN_1a1b559d9a15746a6cec16a8eab074278a"></span><em class="property">static</em> <em class="property">constexpr</em> int64_t <code class="sig-name descname">MIN_IMAGE_SIZE</code> = 800<a class="headerlink" href="#_CPPv4N3Ort8MaskRCNN14MIN_IMAGE_SIZEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N3Ort8MaskRCNN11IMG_CHANNELE">
+<span id="_CPPv3N3Ort8MaskRCNN11IMG_CHANNELE"></span><span id="_CPPv2N3Ort8MaskRCNN11IMG_CHANNELE"></span><span id="Ort::MaskRCNN::IMG_CHANNEL__int64_t"></span><span class="target" id="classOrt_1_1MaskRCNN_1aaa880c56f874e2ec6a6e6c080f61ab40"></span><em class="property">static</em> <em class="property">constexpr</em> int64_t <code class="sig-name descname">IMG_CHANNEL</code> = 3<a class="headerlink" href="#_CPPv4N3Ort8MaskRCNN11IMG_CHANNELE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="MaskRCNNApp.html" class="btn btn-neutral float-right" title="MaskRCNNApp" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Utility.html" class="btn btn-neutral float-left" title="Utility" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021,                                           xmba15, Bey Hao Yun
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

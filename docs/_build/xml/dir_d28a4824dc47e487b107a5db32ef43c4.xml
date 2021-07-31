@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_d28a4824dc47e487b107a5db32ef43c4" kind="dir">
+    <compoundname>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples</compoundname>
+    <innerfile refid="MaskRCNN_8cpp">MaskRCNN.cpp</innerfile>
+    <innerfile refid="MaskRCNN_8hpp">MaskRCNN.hpp</innerfile>
+    <innerfile refid="MaskRCNNApp_8cpp">MaskRCNNApp.cpp</innerfile>
+    <innerfile refid="TestImageClassification_8cpp">TestImageClassification.cpp</innerfile>
+    <innerfile refid="TestObjectDetection_8cpp">TestObjectDetection.cpp</innerfile>
+    <innerfile refid="TinyYolov2_8cpp">TinyYolov2.cpp</innerfile>
+    <innerfile refid="TinyYolov2_8hpp">TinyYolov2.hpp</innerfile>
+    <innerfile refid="TinyYolov2App_8cpp">TinyYolov2App.cpp</innerfile>
+    <innerfile refid="UltraLightFastGenericFaceDetector_8cpp">UltraLightFastGenericFaceDetector.cpp</innerfile>
+    <innerfile refid="UltraLightFastGenericFaceDetector_8hpp">UltraLightFastGenericFaceDetector.hpp</innerfile>
+    <innerfile refid="UltraLightFastGenericFaceDetectorApp_8cpp">UltraLightFastGenericFaceDetectorApp.cpp</innerfile>
+    <innerfile refid="examples_2Utility_8hpp">Utility.hpp</innerfile>
+    <innerfile refid="Yolov3_8cpp">Yolov3.cpp</innerfile>
+    <innerfile refid="Yolov3_8hpp">Yolov3.hpp</innerfile>
+    <innerfile refid="Yolov3App_8cpp">Yolov3App.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/"/>
+  </compounddef>
+</doxygen>

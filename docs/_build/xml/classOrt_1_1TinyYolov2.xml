@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOrt_1_1TinyYolov2" kind="class" language="C++" prot="public">
+    <compoundname>Ort::TinyYolov2</compoundname>
+    <basecompoundref refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase" prot="public" virt="non-virtual">Ort::ImageRecognitionOrtSessionHandlerBase</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classOrt_1_1TinyYolov2_1a1baafc57c083199396eec24421a06ffb" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int64_t</type>
+        <definition>constexpr int64_t Ort::TinyYolov2::IMG_WIDTH</definition>
+        <argsstring></argsstring>
+        <name>IMG_WIDTH</name>
+        <initializer>= 416</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp" line="27" column="30" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOrt_1_1TinyYolov2_1a794d43c63618994a20fc64048a70f681" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int64_t</type>
+        <definition>constexpr int64_t Ort::TinyYolov2::IMG_HEIGHT</definition>
+        <argsstring></argsstring>
+        <name>IMG_HEIGHT</name>
+        <initializer>= 416</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp" line="29" column="30" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOrt_1_1TinyYolov2_1a75cd96b4924c3802b3c1b3e597849452" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int64_t</type>
+        <definition>constexpr int64_t Ort::TinyYolov2::IMG_CHANNEL</definition>
+        <argsstring></argsstring>
+        <name>IMG_CHANNEL</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp" line="31" column="30" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOrt_1_1TinyYolov2_1af99dd88dde50d622f0b3cbbb005d3b86" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int64_t</type>
+        <definition>constexpr int64_t Ort::TinyYolov2::FEATURE_MAP_SIZE</definition>
+        <argsstring></argsstring>
+        <name>FEATURE_MAP_SIZE</name>
+        <initializer>= 13 * 13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp" line="33" column="30" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOrt_1_1TinyYolov2_1aeaf82dcb1cdac5206eb6929c926c0cab" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int64_t</type>
+        <definition>constexpr int64_t Ort::TinyYolov2::NUM_BOXES</definition>
+        <argsstring></argsstring>
+        <name>NUM_BOXES</name>
+        <initializer>= 1 * 13 * 13 * 125</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp" line="35" column="30" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOrt_1_1TinyYolov2_1a0b18a6699afdc50ba622e1c36b970b2b" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int64_t</type>
+        <definition>constexpr int64_t Ort::TinyYolov2::NUM_ANCHORS</definition>
+        <argsstring></argsstring>
+        <name>NUM_ANCHORS</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp" line="37" column="30" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOrt_1_1TinyYolov2_1a3786c27913ad057e36f82d15b639eb30" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr float</type>
+        <definition>constexpr float Ort::TinyYolov2::ANCHORS[10]</definition>
+        <argsstring>[10]</argsstring>
+        <name>ANCHORS</name>
+        <initializer>= {1.08, 1.19, 3.42, 4.41, 6.63, 11.38, 9.42, 5.11, 16.62, 10.52}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp" line="39" column="28" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOrt_1_1TinyYolov2_1a9d834c16ab2e470793f9514bd5f8c08e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Ort::TinyYolov2::TinyYolov2</definition>
+        <argsstring>(const uint16_t numClasses, const std::string &amp;modelPath, const std::optional&lt; size_t &gt; &amp;gpuIdx=std::nullopt, const std::optional&lt; std::vector&lt; std::vector&lt; int64_t &gt;&gt;&gt; &amp;inputShapes=std::nullopt)</argsstring>
+        <name>TinyYolov2</name>
+        <param>
+          <type>const uint16_t</type>
+          <declname>numClasses</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>modelPath</declname>
+        </param>
+        <param>
+          <type>const std::optional&lt; size_t &gt; &amp;</type>
+          <declname>gpuIdx</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <param>
+          <type>const std::optional&lt; std::vector&lt; std::vector&lt; int64_t &gt;&gt;&gt; &amp;</type>
+          <declname>inputShapes</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp" line="41" column="5" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.cpp" bodystart="14" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classOrt_1_1TinyYolov2_1a7a3da45c20ac0360dcc782162190992f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Ort::TinyYolov2::~TinyYolov2</definition>
+        <argsstring>()</argsstring>
+        <name>~TinyYolov2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp" line="46" column="5" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.cpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classOrt_1_1TinyYolov2_1a14938a1f61dec4bc8eb6ee36dfae6703" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ort::TinyYolov2::preprocess</definition>
+        <argsstring>(float *dst, const unsigned char *src, const int64_t targetImgWidth, const int64_t targetImgHeight, const int numChannels) const</argsstring>
+        <name>preprocess</name>
+        <param>
+          <type>float *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>const int64_t</type>
+          <declname>targetImgWidth</declname>
+        </param>
+        <param>
+          <type>const int64_t</type>
+          <declname>targetImgHeight</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>numChannels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp" line="48" column="10" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.cpp" bodystart="79" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classOrt_1_1TinyYolov2_1a262ed070abb51c070240ce7db20cc48c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::tuple&lt; std::vector&lt; std::array&lt; float, 4 &gt; &gt;, std::vector&lt; float &gt;, std::vector&lt; uint64_t &gt; &gt;</type>
+        <definition>std::tuple&lt; std::vector&lt; std::array&lt; float, 4 &gt; &gt;, std::vector&lt; float &gt;, std::vector&lt; uint64_t &gt; &gt; Ort::TinyYolov2::postProcess</definition>
+        <argsstring>(const std::vector&lt; DataOutputType &gt; &amp;inferenceOutput, const float confidenceThresh=0.5) const</argsstring>
+        <name>postProcess</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="classOrt_1_1OrtSessionHandler_1ae50019f6148484bfb802f76bc2ae2204" kindref="member">DataOutputType</ref> &gt; &amp;</type>
+          <declname>inferenceOutput</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>confidenceThresh</declname>
+          <defval>0.5</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp" line="55" column="5" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.cpp" bodystart="27" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Ort::TinyYolov2</label>
+        <link refid="classOrt_1_1TinyYolov2"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Ort::OrtSessionHandler</label>
+        <link refid="classOrt_1_1OrtSessionHandler"/>
+      </node>
+      <node id="2">
+        <label>Ort::ImageRecognitionOrtSessionHandlerBase</label>
+        <link refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ort::TinyYolov2</label>
+        <link refid="classOrt_1_1TinyYolov2"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Ort::OrtSessionHandler</label>
+        <link refid="classOrt_1_1OrtSessionHandler"/>
+      </node>
+      <node id="2">
+        <label>Ort::ImageRecognitionOrtSessionHandlerBase</label>
+        <link refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp" line="25" column="1" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/examples/TinyYolov2.hpp" bodystart="24" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classOrt_1_1TinyYolov2_1a3786c27913ad057e36f82d15b639eb30" prot="public" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>ANCHORS</name></member>
+      <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1adbacf383d7c9c7470f0dd70560aade36" prot="public" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>classNames</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1ae50019f6148484bfb802f76bc2ae2204" prot="public" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>DataOutputType</name></member>
+      <member refid="classOrt_1_1TinyYolov2_1af99dd88dde50d622f0b3cbbb005d3b86" prot="public" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>FEATURE_MAP_SIZE</name></member>
+      <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1ae355622b6602addc7158d994f8c350a3" prot="public" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>ImageRecognitionOrtSessionHandlerBase</name></member>
+      <member refid="classOrt_1_1TinyYolov2_1a75cd96b4924c3802b3c1b3e597849452" prot="public" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>IMG_CHANNEL</name></member>
+      <member refid="classOrt_1_1TinyYolov2_1a794d43c63618994a20fc64048a70f681" prot="public" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>IMG_HEIGHT</name></member>
+      <member refid="classOrt_1_1TinyYolov2_1a1baafc57c083199396eec24421a06ffb" prot="public" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>IMG_WIDTH</name></member>
+      <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a0ea5184de97dc72e718d9fd78fdf5186" prot="public" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>initClassNames</name></member>
+      <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1acd5160d64e0c433bdff286497b56e322" prot="protected" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>m_classNames</name></member>
+      <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a4e37fc918d6f31fa41cade7ea7443e5a" prot="protected" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>m_numClasses</name></member>
+      <member refid="classOrt_1_1TinyYolov2_1a0b18a6699afdc50ba622e1c36b970b2b" prot="public" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>NUM_ANCHORS</name></member>
+      <member refid="classOrt_1_1TinyYolov2_1aeaf82dcb1cdac5206eb6929c926c0cab" prot="public" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>NUM_BOXES</name></member>
+      <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a13e637ab5f5da6765f633de57c29fcbf" prot="public" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>numClasses</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1aee4f8f2afd6f68e60c373d832768be6c" prot="public" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>operator()</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1acc01cfadfefab7dee93a81fa9d4595ca" prot="public" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>OrtSessionHandler</name></member>
+      <member refid="classOrt_1_1TinyYolov2_1a262ed070abb51c070240ce7db20cc48c" prot="public" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>postProcess</name></member>
+      <member refid="classOrt_1_1TinyYolov2_1a14938a1f61dec4bc8eb6ee36dfae6703" prot="public" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>preprocess</name></member>
+      <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a11f8a0fa6a257b4876996d631475627e" prot="public" virt="virtual" ambiguityscope="Ort::ImageRecognitionOrtSessionHandlerBase::"><scope>Ort::TinyYolov2</scope><name>preprocess</name></member>
+      <member refid="classOrt_1_1TinyYolov2_1a9d834c16ab2e470793f9514bd5f8c08e" prot="public" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>TinyYolov2</name></member>
+      <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a06bb4e8775c549cf020b07dfb70abb52" prot="public" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>~ImageRecognitionOrtSessionHandlerBase</name></member>
+      <member refid="classOrt_1_1OrtSessionHandler_1afbd528ee0838f6470d00dc318f570245" prot="public" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>~OrtSessionHandler</name></member>
+      <member refid="classOrt_1_1TinyYolov2_1a7a3da45c20ac0360dcc782162190992f" prot="public" virt="non-virtual"><scope>Ort::TinyYolov2</scope><name>~TinyYolov2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

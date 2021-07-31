@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src</compoundname>
+    <innerfile refid="ImageClassificationOrtSessionHandler_8cpp">ImageClassificationOrtSessionHandler.cpp</innerfile>
+    <innerfile refid="ImageRecognitionOrtSessionHandlerBase_8cpp">ImageRecognitionOrtSessionHandlerBase.cpp</innerfile>
+    <innerfile refid="ObjectDetectionOrtSessionHandler_8cpp">ObjectDetectionOrtSessionHandler.cpp</innerfile>
+    <innerfile refid="OrtSessionHandler_8cpp">OrtSessionHandler.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/src/"/>
+  </compounddef>
+</doxygen>
