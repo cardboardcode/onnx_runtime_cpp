@@ -3,6 +3,7 @@
   <compounddef id="classOrt_1_1ImageClassificationOrtSessionHandler" kind="class" language="C++" prot="public">
     <compoundname>Ort::ImageClassificationOrtSessionHandler</compoundname>
     <basecompoundref refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase" prot="public" virt="non-virtual">Ort::ImageRecognitionOrtSessionHandlerBase</basecompoundref>
+    <includes local="no">ImageClassificationOrtSessionHandler.hpp</includes>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classOrt_1_1ImageClassificationOrtSessionHandler_1a25a96178409b2676b425324d902fa537" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -28,12 +29,18 @@
           <defval>std::nullopt</defval>
         </param>
         <briefdescription>
+<para>This calls <ref refid="classOrt_1_1ImageClassificationOrtSessionHandler" kindref="compound">ImageClassificationOrtSessionHandler</ref>&apos;s constructor. It also: </para>
         </briefdescription>
         <detaileddescription>
+<para><orderedlist>
+<listitem><para>Initializes m_numClasses with numClasses.</para>
+</listitem><listitem><para>Initializes an internal <ref refid="classOrt_1_1OrtSessionHandler" kindref="compound">OrtSessionHandler</ref> with modelPath, gpuIdx and inputShapes. </para>
+</listitem></orderedlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageClassificationOrtSessionHandler.hpp" line="23" column="5"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageClassificationOrtSessionHandler.hpp" line="33" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classOrt_1_1ImageClassificationOrtSessionHandler_1aeaffe5550ab571f4e10477fd3317a3c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -41,12 +48,13 @@
         <argsstring>()</argsstring>
         <name>~ImageClassificationOrtSessionHandler</name>
         <briefdescription>
+<para>Calls standard destructor. Is empty destructor. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageClassificationOrtSessionHandler.hpp" line="29" column="5"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageClassificationOrtSessionHandler.hpp" line="40" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classOrt_1_1ImageClassificationOrtSessionHandler_1a4b2fbb5fa91a98a7270b5500061d38cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; std::pair&lt; int, float &gt; &gt;</type>
@@ -68,12 +76,19 @@
           <defval>true</defval>
         </param>
         <briefdescription>
+<para>A mutator function. </para>
         </briefdescription>
         <detaileddescription>
+<para><orderedlist>
+<listitem><para>Utilizes external softmax function to parse resulting inference from model.</para>
+</listitem><listitem><para>Map corresponding object class name index to resulting confidence score.</para>
+</listitem><listitem><para>Output the top k pairs of object class name index and corresponding confidence score. K is arbitruarily set by user in TestImageClassication.cpp. </para>
+</listitem></orderedlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageClassificationOrtSessionHandler.hpp" line="31" column="17"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageClassificationOrtSessionHandler.hpp" line="47" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classOrt_1_1ImageClassificationOrtSessionHandler_1aec42c71f603000d6c038fcefe1b74264" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -95,15 +110,23 @@
           <defval>true</defval>
         </param>
         <briefdescription>
+<para>A mutator function. </para>
         </briefdescription>
         <detaileddescription>
+<para><orderedlist>
+<listitem><para>Utilizes external softmax function to parse resulting inference from model.</para>
+</listitem><listitem><para>Map corresponding object class name string to resulting confidence score.</para>
+</listitem><listitem><para>Print to terminal the top k pairs of object class name string and corresponding confidence score. K is arbitruarily set by user in TestImageClassication.cpp. </para>
+</listitem></orderedlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageClassificationOrtSessionHandler.hpp" line="35" column="17"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageClassificationOrtSessionHandler.hpp" line="56" column="17"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>An <ref refid="classOrt_1_1ImageClassificationOrtSessionHandler" kindref="compound">ImageClassificationOrtSessionHandler</ref> class object. This class inherits <ref refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase" kindref="compound">ImageRecognitionOrtSessionHandlerBase</ref> and is only used in TestImageClassication.cpp where squeezenet1.1.onnx is utilized according to the preface instructions on README.md. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -143,7 +166,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageClassificationOrtSessionHandler.hpp" line="21" column="1" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageClassificationOrtSessionHandler.hpp" bodystart="20" bodyend="38"/>
+    <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageClassificationOrtSessionHandler.hpp" line="27" column="1" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageClassificationOrtSessionHandler.hpp" bodystart="26" bodyend="59"/>
     <listofallmembers>
       <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1adbacf383d7c9c7470f0dd70560aade36" prot="public" virt="non-virtual"><scope>Ort::ImageClassificationOrtSessionHandler</scope><name>classNames</name></member>
       <member refid="classOrt_1_1OrtSessionHandler_1ae50019f6148484bfb802f76bc2ae2204" prot="public" virt="non-virtual"><scope>Ort::ImageClassificationOrtSessionHandler</scope><name>DataOutputType</name></member>

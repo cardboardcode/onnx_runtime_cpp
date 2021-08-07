@@ -1,9 +1,9 @@
 <map id="Ort::OrtSessionHandler" name="Ort::OrtSessionHandler">
 <area shape="rect" id="node1" title="An OrtSessionHandler class object. This class serves as the base parent class which is inherited by c..." alt="" coords="5,159,176,186"/>
 <area shape="rect" id="node2" href="$classOrt_1_1ImageRecognitionOrtSessionHandlerBase.html" title="An ImageRecognitionOrtSessionHandlerBase class object. This class inherits from the base class,..." alt="" coords="224,152,412,193"/>
-<area shape="rect" id="node3" href="$classOrt_1_1ImageClassificationOrtSessionHandler.html" title=" " alt="" coords="483,5,662,47"/>
+<area shape="rect" id="node3" href="$classOrt_1_1ImageClassificationOrtSessionHandler.html" title="An ImageClassificationOrtSessionHandler class object. This class inherits ImageRecognitionOrtSessionH..." alt="" coords="483,5,662,47"/>
 <area shape="rect" id="node4" href="$classOrt_1_1MaskRCNN.html" title=" " alt="" coords="511,71,634,98"/>
-<area shape="rect" id="node5" href="$classOrt_1_1ObjectDetectionOrtSessionHandler.html" title=" " alt="" coords="460,123,685,164"/>
+<area shape="rect" id="node5" href="$classOrt_1_1ObjectDetectionOrtSessionHandler.html" title="An ObjectDetectionOrtSessionHandler class object. This class is not used anywhere in the codebase...." alt="" coords="460,123,685,164"/>
 <area shape="rect" id="node6" href="$classOrt_1_1TinyYolov2.html" title=" " alt="" coords="513,189,632,215"/>
 <area shape="rect" id="node7" href="$classOrt_1_1UltraLightFastGenericFaceDetector.html" title=" " alt="" coords="477,240,668,281"/>
 <area shape="rect" id="node8" href="$classOrt_1_1Yolov3.html" title=" " alt="" coords="527,306,619,333"/>
