@@ -14,7 +14,6 @@ Welcome to onnx_runtime_cpp's documentation!
    :caption: Contents:
 
 
-
 Indices and tables
 ==================
 
@@ -28,4 +27,5 @@ Table of Contents
 .. toctree::
     :maxdepth: 2
 
+    structure/index
     api/index
