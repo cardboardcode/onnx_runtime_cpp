@@ -320,7 +320,7 @@
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ort::UltraLightFastGenericFaceDetector::IMG_H,</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ort::UltraLightFastGenericFaceDetector::IMG_W}});</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>osh.initClassNames(FACE_CLASSES);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>osh.<ref refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a0ea5184de97dc72e718d9fd78fdf5186" kindref="member">initClassNames</ref>(FACE_CLASSES);</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;float&gt;<sp/>dst(Ort::UltraLightFastGenericFaceDetector::IMG_CHANNEL<sp/>*</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ort::UltraLightFastGenericFaceDetector::IMG_H<sp/>*</highlight></codeline>
@@ -390,7 +390,7 @@
 <codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>afterNmsClassIndices.emplace_back(classIndices[idx]);</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>visualizeOneImage(inputImg,<sp/>afterNmsBboxes,<sp/>afterNmsClassIndices,<sp/>COLORS,<sp/>osh.classNames());</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>visualizeOneImage(inputImg,<sp/>afterNmsBboxes,<sp/>afterNmsClassIndices,<sp/>COLORS,<sp/>osh.<ref refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1adbacf383d7c9c7470f0dd70560aade36" kindref="member">classNames</ref>());</highlight></codeline>
 <codeline lineno="121"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="122"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>

@@ -297,7 +297,7 @@ Copyright (c) organization </para>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOrt_1_1MaskRCNN" kindref="compound">Ort::MaskRCNN</ref><sp/>osh(Ort::MSCOCO_NUM_CLASSES,<sp/>ONNX_MODEL_PATH,<sp/>0,</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;int64_t&gt;&gt;{{Ort::MaskRCNN::IMG_CHANNEL,<sp/>paddedH,<sp/>paddedW}});</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>osh.initClassNames(Ort::MSCOCO_CLASSES);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>osh.<ref refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a0ea5184de97dc72e718d9fd78fdf5186" kindref="member">initClassNames</ref>(Ort::MSCOCO_CLASSES);</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;float&gt;<sp/>dst(Ort::MaskRCNN::IMG_CHANNEL<sp/>*<sp/>paddedH<sp/>*<sp/>paddedW);</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
@@ -366,7 +366,7 @@ Copyright (c) organization </para>
 <codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>inputImg;</highlight></codeline>
 <codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>visualizeMask<sp/>?<sp/>::visualizeOneImageWithMask(inputImg,<sp/>bboxes,<sp/>classIndices,<sp/>masks,<sp/>COLORS,<sp/>osh.classNames())</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>visualizeMask<sp/>?<sp/>::visualizeOneImageWithMask(inputImg,<sp/>bboxes,<sp/>classIndices,<sp/>masks,<sp/>COLORS,<sp/>osh.<ref refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1adbacf383d7c9c7470f0dd70560aade36" kindref="member">classNames</ref>())</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>::visualizeOneImage(inputImg,<sp/>bboxes,<sp/>classIndices,<sp/>COLORS,<sp/>osh.classNames());</highlight></codeline>
 <codeline lineno="130"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="131"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>

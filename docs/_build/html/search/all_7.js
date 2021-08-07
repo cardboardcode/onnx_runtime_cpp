@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['yolov3_24',['Yolov3',['../classOrt_1_1Yolov3.html',1,'Ort']]],
-  ['yolov3_2ehpp_25',['Yolov3.hpp',['../Yolov3_8hpp.html',1,'']]],
-  ['yolov3app_2ecpp_26',['Yolov3App.cpp',['../Yolov3App_8cpp.html',1,'']]]
+  ['testimageclassification_2ecpp_21',['TestImageClassification.cpp',['../TestImageClassification_8cpp.html',1,'']]],
+  ['testobjectdetection_2ecpp_22',['TestObjectDetection.cpp',['../TestObjectDetection_8cpp.html',1,'']]],
+  ['tinyyolov2_23',['TinyYolov2',['../classOrt_1_1TinyYolov2.html',1,'Ort']]],
+  ['tinyyolov2_2ehpp_24',['TinyYolov2.hpp',['../TinyYolov2_8hpp.html',1,'']]],
+  ['tinyyolov2app_2ecpp_25',['TinyYolov2App.cpp',['../TinyYolov2App_8cpp.html',1,'']]]
 ];

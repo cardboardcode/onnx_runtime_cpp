@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['_7eortsessionhandler_55',['~OrtSessionHandler',['../classOrt_1_1OrtSessionHandler.html#afbd528ee0838f6470d00dc318f570245',1,'Ort::OrtSessionHandler']]]
+  ['imagerecognitionortsessionhandlerbase_61',['ImageRecognitionOrtSessionHandlerBase',['../classOrt_1_1ImageRecognitionOrtSessionHandlerBase.html#ae355622b6602addc7158d994f8c350a3',1,'Ort::ImageRecognitionOrtSessionHandlerBase']]],
+  ['initclassnames_62',['initClassNames',['../classOrt_1_1ImageRecognitionOrtSessionHandlerBase.html#a0ea5184de97dc72e718d9fd78fdf5186',1,'Ort::ImageRecognitionOrtSessionHandlerBase']]]
 ];

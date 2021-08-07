@@ -340,7 +340,7 @@ Copyright (c) organization </para>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIRD_NUM_CLASSES,<sp/>ONNX_MODEL_PATH,<sp/>0,</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;int64_t&gt;&gt;{{1,<sp/>Ort::Yolov3::IMG_CHANNEL,<sp/>Ort::Yolov3::IMG_H,<sp/>Ort::Yolov3::IMG_W}});</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>osh.initClassNames(BIRD_CLASSES);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>osh.<ref refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a0ea5184de97dc72e718d9fd78fdf5186" kindref="member">initClassNames</ref>(BIRD_CLASSES);</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;float&gt;<sp/>dst(Ort::Yolov3::IMG_CHANNEL<sp/>*<sp/>Ort::Yolov3::IMG_H<sp/>*<sp/>Ort::Yolov3::IMG_W);</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>processOneFrame(osh,<sp/>img,<sp/>dst.data());</highlight></codeline>
@@ -393,7 +393,7 @@ Copyright (c) organization </para>
 <codeline lineno="102"><highlight class="normal"></highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scores.emplace_back(conf);</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxIdx<sp/>=<sp/>std::max_element(inferenceOutput[0].first<sp/>+<sp/>i<sp/>+<sp/>5,</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inferenceOutput[0].first<sp/>+<sp/>i<sp/>+<sp/>5<sp/>+<sp/>osh.numClasses())<sp/>-</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inferenceOutput[0].first<sp/>+<sp/>i<sp/>+<sp/>5<sp/>+<sp/>osh.<ref refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a13e637ab5f5da6765f633de57c29fcbf" kindref="member">numClasses</ref>())<sp/>-</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(inferenceOutput[0].first<sp/>+<sp/>i<sp/>+<sp/>5);</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>classIndices.emplace_back(maxIdx);</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -416,7 +416,7 @@ Copyright (c) organization </para>
 <codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>afterNmsClassIndices.emplace_back(classIndices[idx]);</highlight></codeline>
 <codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>visualizeOneImage(inputImg,<sp/>afterNmsBboxes,<sp/>afterNmsClassIndices,<sp/>COLORS,<sp/>osh.classNames());</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>visualizeOneImage(inputImg,<sp/>afterNmsBboxes,<sp/>afterNmsClassIndices,<sp/>COLORS,<sp/>osh.<ref refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1adbacf383d7c9c7470f0dd70560aade36" kindref="member">classNames</ref>());</highlight></codeline>
 <codeline lineno="129"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="130"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>

@@ -268,7 +268,7 @@ Copyright (c) organization </para>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ort::IMAGENET_NUM_CLASSES,<sp/>ONNX_MODEL_PATH,<sp/>0,</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;int64_t&gt;&gt;{{1,<sp/>IMG_CHANNEL,<sp/>IMG_WIDTH,<sp/>IMG_HEIGHT},<sp/>{1,<sp/>2}});</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>osh.initClassNames(Ort::IMAGENET_CLASSES);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>osh.<ref refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a0ea5184de97dc72e718d9fd78fdf5186" kindref="member">initClassNames</ref>(Ort::IMAGENET_CLASSES);</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::Mat<sp/>img<sp/>=<sp/>cv::imread(IMAGE_PATH);</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>

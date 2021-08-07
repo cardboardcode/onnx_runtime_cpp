@@ -9,6 +9,7 @@
     <derivedcompoundref refid="classOrt_1_1TinyYolov2" prot="public" virt="non-virtual">Ort::TinyYolov2</derivedcompoundref>
     <derivedcompoundref refid="classOrt_1_1UltraLightFastGenericFaceDetector" prot="public" virt="non-virtual">Ort::UltraLightFastGenericFaceDetector</derivedcompoundref>
     <derivedcompoundref refid="classOrt_1_1Yolov3" prot="public" virt="non-virtual">Ort::Yolov3</derivedcompoundref>
+    <includes local="no">ImageRecognitionOrtSessionHandlerBase.hpp</includes>
       <sectiondef kind="protected-attrib">
       <memberdef kind="variable" id="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a4e37fc918d6f31fa41cade7ea7443e5a" prot="protected" static="no" mutable="no">
         <type>const uint16_t</type>
@@ -16,12 +17,13 @@
         <argsstring></argsstring>
         <name>m_numClasses</name>
         <briefdescription>
+<para>The number of classes defined beforehand. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="52" column="20" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" bodystart="52" bodyend="-1"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="86" column="20" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1acd5160d64e0c433bdff286497b56e322" prot="protected" static="no" mutable="no">
         <type>std::vector&lt; std::string &gt;</type>
@@ -29,12 +31,13 @@
         <argsstring></argsstring>
         <name>m_classNames</name>
         <briefdescription>
+<para>The the string of class names defined beforehand. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="53" column="17" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" bodystart="53" bodyend="-1"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="88" column="17" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" bodystart="88" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -62,12 +65,19 @@
           <defval>std::nullopt</defval>
         </param>
         <briefdescription>
+<para>This calls OrtSessionHandler’s constructor. It also: </para>
         </briefdescription>
         <detaileddescription>
+<para><orderedlist>
+<listitem><para>Initializes m_numClasses with numClasses.</para>
+</listitem><listitem><para>Initializes empty m_classNames.</para>
+</listitem><listitem><para>Populates m_classNames with numeric text strings corresponding to numClasses. </para>
+</listitem></orderedlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="23" column="5"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="36" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a06bb4e8775c549cf020b07dfb70abb52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -75,12 +85,13 @@
         <argsstring>()</argsstring>
         <name>~ImageRecognitionOrtSessionHandlerBase</name>
         <briefdescription>
+<para>Calls standard destructor. Is empty destructor. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="29" column="5"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="43" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a0ea5184de97dc72e718d9fd78fdf5186" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -92,12 +103,19 @@
           <declname>classNames</declname>
         </param>
         <briefdescription>
+<para>A mutator function. </para>
         </briefdescription>
         <detaileddescription>
+<para><orderedlist>
+<listitem><para>Runs check on if input array of class names is equal to previously assigned number of classes in m_numClasses.</para>
+</listitem><listitem><para>If true, assigns m_classNames with classNames.</para>
+</listitem><listitem><para>Otherwise, report an error. </para>
+</listitem></orderedlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="31" column="10"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="51" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a26b84439032ba07c2d033a0a2fe46736" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -135,12 +153,14 @@
           <defval>{}</defval>
         </param>
         <briefdescription>
+<para>A mutator function. </para>
         </briefdescription>
         <detaileddescription>
+<para>Given a certain format of an image like cv::Mat, populate dst to used during inferencing. The only difference it has as compared to the overriding counterparts is that it considers input arguments, meanVal and stdVal when populating dst. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="33" column="18"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="60" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a13e637ab5f5da6765f633de57c29fcbf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>uint16_t</type>
@@ -148,12 +168,13 @@
         <argsstring>() const</argsstring>
         <name>numClasses</name>
         <briefdescription>
+<para>A getter function. Returns the number of classes defined before. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="41" column="14" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" bodystart="41" bodyend="44"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="71" column="14" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" bodystart="71" bodyend="74"/>
       </memberdef>
       <memberdef kind="function" id="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1adbacf383d7c9c7470f0dd70560aade36" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const std::vector&lt; std::string &gt; &amp;</type>
@@ -161,15 +182,17 @@
         <argsstring>() const</argsstring>
         <name>classNames</name>
         <briefdescription>
+<para>A getter function. Returns the string of class names. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="46" column="23" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" bodystart="46" bodyend="49"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="79" column="23" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" bodystart="79" bodyend="82"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>An <ref refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase" kindref="compound">ImageRecognitionOrtSessionHandlerBase</ref> class object. This class inherits from the base class, <ref refid="classOrt_1_1OrtSessionHandler" kindref="compound">OrtSessionHandler</ref> and serves as the base class for <ref refid="classOrt_1_1MaskRCNN" kindref="compound">MaskRCNN</ref>, <ref refid="classOrt_1_1TinyYolov2" kindref="compound">TinyYolov2</ref>, <ref refid="classOrt_1_1Yolov3" kindref="compound">Yolov3</ref> and <ref refid="classOrt_1_1UltraLightFastGenericFaceDetector" kindref="compound">UltraLightFastGenericFaceDetector</ref>. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -233,7 +256,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="21" column="1" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" bodystart="20" bodyend="54"/>
+    <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" line="28" column="1" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ImageRecognitionOrtSessionHandlerBase.hpp" bodystart="27" bodyend="89"/>
     <listofallmembers>
       <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1adbacf383d7c9c7470f0dd70560aade36" prot="public" virt="non-virtual"><scope>Ort::ImageRecognitionOrtSessionHandlerBase</scope><name>classNames</name></member>
       <member refid="classOrt_1_1OrtSessionHandler_1ae50019f6148484bfb802f76bc2ae2204" prot="public" virt="non-virtual"><scope>Ort::ImageRecognitionOrtSessionHandlerBase</scope><name>DataOutputType</name></member>

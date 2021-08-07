@@ -296,7 +296,7 @@ Copyright (c) organization </para>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;int64_t&gt;&gt;{{1,<sp/>Ort::TinyYolov2::IMG_CHANNEL,<sp/>Ort::TinyYolov2::IMG_WIDTH,</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ort::TinyYolov2::IMG_HEIGHT}});</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>osh.initClassNames(Ort::VOC_CLASSES);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>osh.<ref refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1a0ea5184de97dc72e718d9fd78fdf5186" kindref="member">initClassNames</ref>(Ort::VOC_CLASSES);</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;float,<sp/>Ort::TinyYolov2::IMG_WIDTH<sp/>*<sp/>Ort::TinyYolov2::IMG_HEIGHT<sp/>*<sp/>Ort::TinyYolov2::IMG_CHANNEL&gt;<sp/>dst;</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::Mat<sp/>img<sp/>=<sp/>cv::imread(IMAGE_PATH);</highlight></codeline>
@@ -348,7 +348,7 @@ Copyright (c) organization </para>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>afterNmsClassIndices.emplace_back(classIndices[idx]);</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>=<sp/>::visualizeOneImage(result,<sp/>afterNmsBboxes,<sp/>afterNmsClassIndices,<sp/>COLORS,<sp/>osh.classNames());</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>=<sp/>::visualizeOneImage(result,<sp/>afterNmsBboxes,<sp/>afterNmsClassIndices,<sp/>COLORS,<sp/>osh.<ref refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1adbacf383d7c9c7470f0dd70560aade36" kindref="member">classNames</ref>());</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
 <codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
 <codeline lineno="98"><highlight class="normal">}</highlight></codeline>
