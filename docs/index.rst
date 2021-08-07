@@ -13,7 +13,9 @@ Welcome to onnx_runtime_cpp's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+.. image:: img/20210807_onnx_runtime_cpp_inheritance_hierachy.png
+   :width: 400
+   :alt: Alternative text
 
 Indices and tables
 ==================
