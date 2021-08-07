@@ -18,6 +18,26 @@ static constexpr int64_t IMG_HEIGHT = 416;
 static constexpr int64_t IMG_CHANNEL = 3;
 static constexpr int64_t TEST_TIMES = 1;
 
+/*! \brief
+
+This source file is not mentioned in the preface README.md on how to use. Follow at your own risk.
+
+The following steps outlines verbosely what the code in this .cpp file does.
+
+1. Checks if the number of commandline arguments is not exactly 3. If true, output verbose error and exit with failure.
+2. Store the first commandline argument as the file path to the referenced onnx model and the second as the file path to input image.
+3. Instantiate an ObjectDetectionOrtSessionHandler class object and initialize it with the total number of pretrained ImageNet Classes for an unknown onnx model with the file path to referenced onnx model.
+4. Initialize the classNames in the class object with IMAGENET_CLASSES as defined under Constants.hpp.
+5. Read in input image using Opencv.
+6. Check if input image is empty. If so, output error and exit with failure.
+7. Resize input image down to 416 by 416, as defined in this .cpp file.
+8. Convert input image to 1-dimensional float array.
+9. Pass 1-dimensional float array to ObjectDetectionOrtSessionHandler preprocess function to account for ImageNet images Mean and Standard Deviation. This helps normalize the input image based on how squeezenet1.1.onnx was trained on ImageNet.
+10. Start debug timer.
+11. Pass normalized 1-dimensional float array to ObjectDetectionOrtSessionHandler inference step and store in inferenceOutput variable.
+12. No output tensor or image is generated in this source file. It will only output the size of the inferenceOutput variable.
+13. Stop debug timer. Calculate and output to terminal the time taken to run 1000 rounds of inference.
+*/
 int main(int argc, char* argv[])
 {
     if (argc != 3) {
