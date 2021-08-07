@@ -18,20 +18,23 @@ namespace Ort
 {
   /*! \class ObjectDetectionOrtSessionHandler
       \brief An ObjectDetectionOrtSessionHandler class object.
-      This class is not used anywhere in the codebase. So I don't know why this is here.
-      Maybe I am dumb. I don't know.
-
-      Will update this if the original author still see a need for this. Okay. Bye.
+      This class inherits ImageRecognitionOrtSessionHandlerBase and is used by
+      TestObjectDetection.cpp under examples.
   */
 class ObjectDetectionOrtSessionHandler : public ImageRecognitionOrtSessionHandlerBase
 {
  public:
+   /*! \brief This calls ObjectDetectionOrtSessionHandler's constructor.
+   It also:
+   1. Initializes m_numClasses with numClasses.
+   2. Initializes an internal OrtSessionHandler with modelPath, gpuIdx and inputShapes.*/
     ObjectDetectionOrtSessionHandler(
         const uint16_t numClasses,                           //
         const std::string& modelPath,                        //
         const std::optional<size_t>& gpuIdx = std::nullopt,  //
         const std::optional<std::vector<std::vector<int64_t>>>& inputShapes = std::nullopt);
 
+    /*! \brief Calls standard destructor. Is empty destructor.*/
     ~ObjectDetectionOrtSessionHandler();
 };
 }  // namespace Ort

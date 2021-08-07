@@ -29,12 +29,18 @@
           <defval>std::nullopt</defval>
         </param>
         <briefdescription>
+<para>This calls <ref refid="classOrt_1_1ObjectDetectionOrtSessionHandler" kindref="compound">ObjectDetectionOrtSessionHandler</ref>&apos;s constructor. It also: </para>
         </briefdescription>
         <detaileddescription>
+<para><orderedlist>
+<listitem><para>Initializes m_numClasses with numClasses.</para>
+</listitem><listitem><para>Initializes an internal <ref refid="classOrt_1_1OrtSessionHandler" kindref="compound">OrtSessionHandler</ref> with modelPath, gpuIdx and inputShapes. </para>
+</listitem></orderedlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ObjectDetectionOrtSessionHandler.hpp" line="29" column="5"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ObjectDetectionOrtSessionHandler.hpp" line="31" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classOrt_1_1ObjectDetectionOrtSessionHandler_1a326279395a9150ea932c5ad349501561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -42,19 +48,19 @@
         <argsstring>()</argsstring>
         <name>~ObjectDetectionOrtSessionHandler</name>
         <briefdescription>
+<para>Calls standard destructor. Is empty destructor. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ObjectDetectionOrtSessionHandler.hpp" line="35" column="5"/>
+        <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ObjectDetectionOrtSessionHandler.hpp" line="38" column="5"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>An <ref refid="classOrt_1_1ObjectDetectionOrtSessionHandler" kindref="compound">ObjectDetectionOrtSessionHandler</ref> class object. This class is not used anywhere in the codebase. So I don&apos;t know why this is here. Maybe I am dumb. I don&apos;t know. </para>
+<para>An <ref refid="classOrt_1_1ObjectDetectionOrtSessionHandler" kindref="compound">ObjectDetectionOrtSessionHandler</ref> class object. This class inherits <ref refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase" kindref="compound">ImageRecognitionOrtSessionHandlerBase</ref> and is used by <ref refid="TestObjectDetection_8cpp" kindref="compound">TestObjectDetection.cpp</ref> under examples. </para>
     </briefdescription>
     <detaileddescription>
-<para>Will update this if the original author still see a need for this. Okay. Bye. </para>
     </detaileddescription>
     <inheritancegraph>
       <node id="3">
@@ -92,7 +98,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ObjectDetectionOrtSessionHandler.hpp" line="27" column="1" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ObjectDetectionOrtSessionHandler.hpp" bodystart="26" bodyend="36"/>
+    <location file="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ObjectDetectionOrtSessionHandler.hpp" line="25" column="1" bodyfile="/home/cardboardvoice/Desktop/repo_archive/forked_onnx_runtime_cpp/include/ort_utility/ObjectDetectionOrtSessionHandler.hpp" bodystart="24" bodyend="39"/>
     <listofallmembers>
       <member refid="classOrt_1_1ImageRecognitionOrtSessionHandlerBase_1adbacf383d7c9c7470f0dd70560aade36" prot="public" virt="non-virtual"><scope>Ort::ObjectDetectionOrtSessionHandler</scope><name>classNames</name></member>
       <member refid="classOrt_1_1OrtSessionHandler_1ae50019f6148484bfb802f76bc2ae2204" prot="public" virt="non-virtual"><scope>Ort::ObjectDetectionOrtSessionHandler</scope><name>DataOutputType</name></member>
