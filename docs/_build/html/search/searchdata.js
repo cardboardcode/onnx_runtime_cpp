@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "cdimnoptuy~",
   1: "imotuy",
   2: "cimotuy",
-  3: "cinopt~",
+  3: "cimnopt~",
   4: "m",
   5: "d"
 };
