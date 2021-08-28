@@ -26,6 +26,12 @@
 #define ENABLE_DEBUG 0
 #endif
 
+/*! \brief
+    Defines a custom operator, << , that returns an std::ostream output stream objects
+    to be printed onto terminal.
+
+    This operator is used in src/ImageClassificationOrtSessionHandler.cpp and src/OrtSessionHandler.cpp.
+*/
 template <typename T, template <typename, typename = std::allocator<T>> class Container>
 std::ostream& operator<<(std::ostream& os, const Container<T>& container)
 {
@@ -39,6 +45,11 @@ std::ostream& operator<<(std::ostream& os, const Container<T>& container)
 
 namespace
 {
+  /*! \brief
+      A mutator function that is only used internally with this source file by nms function call.
+
+      Sorts the the array of confidence scores ranging from the highest score at index 0 to the lowest score.
+  */
 template <typename T> std::deque<size_t> sortIndexes(const std::vector<T>& v)
 {
     std::deque<size_t> indices(v.size());
@@ -63,6 +74,12 @@ namespace Ort
 #define DEBUG_LOG(...)
 #endif
 
+/*! \brief
+    Defines a custom operator, << , that returns an std::ostream output stream objects
+    to be printed onto terminal.
+
+    This operator is used in src/ImageClassificationOrtSessionHandler.cpp and src/OrtSessionHandler.cpp.
+*/
 template <typename T, template <typename, typename = std::allocator<T>> class Container>
 std::ostream& operator<<(std::ostream& os, const Container<T>& container)
 {
@@ -74,6 +91,10 @@ std::ostream& operator<<(std::ostream& os, const Container<T>& container)
     return os;
 }
 
+/*! \brief
+    Applies the Softmax function to the results of ImageClassificationSessionHandler which normalizes the
+    input vector of topK results into a probablity distribution consistenting of k probabilites.
+*/
 inline void softmax(float* input, const size_t inputLen)
 {
     const float maxVal = *std::max_element(input, input + inputLen);
@@ -87,11 +108,24 @@ inline void softmax(float* input, const size_t inputLen)
     }
 }
 
+/*! \brief
+    This is used in src/TinyYolov2.cpp.
+
+    Applies the Sigmoid function to the results of TinyYolov2 which normalizes the
+    input vector of detected objects with corresponding confidence scores.
+*/
 inline float sigmoid(const float x)
 {
     return 1.0 / (1.0 + expf(-x));
 }
 
+/*! \brief
+    This is used in src/TinyYolov2.cpp, src/UltraLightFastGenericFaceDetector.cpp
+    and src/Yolov3App.cpp.
+
+    Applies the Non-Maximum Suppression function to the results of TinyYolov2, UltraLightFastGenericFaceDetector
+    and Yolov3App.
+*/
 inline std::vector<uint64_t> nms(const std::vector<std::array<float, 4>>& bboxes,            //
                                  const std::vector<float>& scores,                           //
                                  const float overlapThresh = 0.45,                           //
@@ -160,6 +194,13 @@ inline std::vector<uint64_t> nms(const std::vector<std::array<float, 4>>& bboxes
     return keepIndices;
 }
 
+/*! \brief
+    This is used in src/UltraLightFastGenericFaceDetector.cpp
+    and src/Yolov3App.cpp.
+
+    This generates a randomized list of colors that corresponds to the number of input class labels.
+    The default value is 1000, corresponding to Imagenet classes. 
+*/
 inline std::vector<std::array<int, 3>> generateColorCharts(const uint16_t numClasses = 1000, const uint16_t seed = 255)
 {
     std::srand(seed);
