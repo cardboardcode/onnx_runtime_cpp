@@ -22,8 +22,27 @@ static constexpr const float CONFIDENCE_THRESHOLD = 0.2;
 static constexpr const float NMS_THRESHOLD = 0.6;
 static const std::vector<cv::Scalar> COLORS = toCvScalarColors(BIRD_COLOR_CHART);
 
+/*! \brief
+
+The following steps outlines verbosely what the code in this .cpp file does.
+
+1. Checks if the number of commandline arguments is not exactly 3. If true, output verbose error and exit with failure.
+2. Store the first commandline argument as the file path to the referenced onnx model and the second as the file path to input image.
+3. Read in input image using Opencv.
+4. Instantiate a Yolov3 class object and initialize it with the total number of a custom Bird Classes for an unknown onnx model with the file path to referenced onnx model.
+5. Initialize the classNames in the class object with BIRD_CLASSES as defined under Constants.hpp.
+
+6. Initializes a float-type vector variable called dst that takes into account 3 channels for expected input RGB images and a fixed height of 800 pixels and a fixed width of 800 pixels.
+7. Calls processOneFrame function which is defined in the same script here and gets the output detection result in the form of an image.
+8. Write the output detection result into an image file named result.jpg.
+*/
 namespace
 {
+/*! \brief
+    This is an auxillary function that calls the real processOneFrame function with default values of confThresh and nmsThresh.
+
+    You can adjust the confThresh and nmsThresh value here to tweak the inference results in terms of what detection outputs can filtered out.
+*/
 cv::Mat processOneFrame(Ort::Yolov3& osh, const cv::Mat& inputImg, float* dst, const float confThresh = 0.15,
                         const float nmsThresh = 0.5);
 }  // namespace
@@ -60,6 +79,18 @@ int main(int argc, char* argv[])
 
 namespace
 {
+/*! \brief
+1. Resizes the the input RGB image proportionally to the fixed 800 pixels by 800 pixels input format for Yolov3.
+2. Calls preprocess function to convert the resized input image matrix to 1-dimensional float array.
+3. Run the inference with the 1-dimensional float array.
+4. Extract the anchors and attributes value from the inference output, storing them in numAnchors and numAttrs variables.
+5. Convert the inference output to appropriately segregated vector outputs that capture bounding boxes information, corresponding scores and
+class indices. Filters out any bounding box detection that falls below the defalt 0.15 confidence threshold which is pre-defined in the auxillary function call for processOneFrame.
+6. If the number of bounding boxes in the inference output is zero, just return the original input image.
+7. Perform Non-Maximum Suppression on the segregated vector outputs and filter out bounding boxes with their corresponding confidence score and class indices, based on  0.5 nms threshold value. This value is defined in the auxillary function call for processOneFrame.
+8. Store the filtered results from afterNmsBboxes and afterNmsIndices variables.
+9. Calls the visualizeOneImage function which is defined in examples/Utilty.hpp and returns an output image with all bounding boxes with class label and confidence score printed on image.
+*/
 cv::Mat processOneFrame(Ort::Yolov3& osh, const cv::Mat& inputImg, float* dst, const float confThresh,
                         const float nmsThresh)
 {
