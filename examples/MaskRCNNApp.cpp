@@ -30,6 +30,36 @@ cv::Mat processOneFrame(Ort::MaskRCNN& osh, const cv::Mat& inputImg, int newW, i
                         bool visualizeMask = true);
 }  // namespace
 
+/*! \brief
+
+The following steps outlines verbosely what the code in this .cpp file does.
+
+1. Checks if the number of commandline arguments is not exactly 3. If true, output verbose error and exit with failure.
+2. Store the first commandline argument as the file path to the referenced onnx model and the second as the file path to input image.
+3. Read in input image using Opencv.
+4. Instantiate a MaskRCNN class object and initialize it with the total number of prefined MSCOCO_NUM_CLASSES for an input onnx model with the file path to referenced onnx model.
+5. Initialize the classNames in the class object with MSCOCO_CLASSES as defined under Constants.hpp.
+
+6. Initializes a float-type vector variable called dst that takes into account 3 channels for expected input RGB images and a padded image.
+7. Calls processOneFrame function which is defined in the same script here and gets the output detection result in the form of an image.
+
+  a. Pads the the input RGB image proportionally to a minimum 800 pixels by 800 pixels input format for MaskRCNN.
+
+  b. Calls preprocess function to convert the resized input image matrix to 1-dimensional float array.
+
+  c. Run the inference with the 1-dimensional float array.
+
+  d. Extract the anchors and attributes value from the inference output, storing them in numAnchors and numAttrs variables.
+
+  e. Convert the inference output to appropriately segregated vector outputs that capture bounding boxes information, corresponding scores and
+  class indices. Filters out any bounding box detection that falls below the defalt 0.15 confidence threshold which is pre-defined in the auxillary function call for processOneFrame.
+
+  f. If the number of bounding boxes in the inference output is zero, just return the original input image.
+
+  i. Calls the visualizeOneImageWithMask function which is defined in examples/Utilty.hpp and returns an output image with all bounding boxes with segmentation masks, class labels and confidence scores printed on image. This function call is done by default by the auxillary processOneFrame function with the boolean visualizeMask variable.
+
+8. Write the output detection result into an image file named result.jpg.
+*/
 int main(int argc, char* argv[])
 {
     if (argc != 3) {

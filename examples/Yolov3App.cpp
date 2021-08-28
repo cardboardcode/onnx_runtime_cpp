@@ -67,10 +67,6 @@ The following steps outlines verbosely what the code in this .cpp file does.
 
 8. Write the output detection result into an image file named result.jpg.
 */
-
-/*! \brief
-
-*/
 int main(int argc, char* argv[])
 {
     if (argc != 3) {
