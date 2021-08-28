@@ -1,5 +1,0 @@
-<map id="Ort::ImageClassificationOrtSessionHandler" name="Ort::ImageClassificationOrtSessionHandler">
-<area shape="rect" id="node1" title="An ImageClassificationOrtSessionHandler class object. This class inherits ImageRecognitionOrtSessionH..." alt="" coords="10,169,189,211"/>
-<area shape="rect" id="node2" href="$classOrt_1_1ImageRecognitionOrtSessionHandlerBase.html" title="An ImageRecognitionOrtSessionHandlerBase class object. This class inherits from the base class,..." alt="" coords="5,80,193,121"/>
-<area shape="rect" id="node3" href="$classOrt_1_1OrtSessionHandler.html" title="An OrtSessionHandler class object. This class serves as the base parent class which is inherited by c..." alt="" coords="14,5,185,32"/>
-</map>
