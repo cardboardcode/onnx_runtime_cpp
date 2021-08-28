@@ -21,8 +21,8 @@ subprocess.call('doxygen Doxyfile.in', shell=True)
 
 # -- Project information -----------------------------------------------------
 
-project =                                           'onnx_runtime_cpp'
-copyright = '2021,                                           xmba15, Bey Hao Yun'
+project = 'onnx_runtime_cpp'
+copyright = '2021, xmba15, Bey Hao Yun'
 author = 'xmba15, Bey Hao Yun'
 
 
@@ -89,7 +89,7 @@ html_static_path = ['_static']
 # -- Breathe configuration -------------------------------------------------
 
 breathe_projects = {
-	"onnx_runtime_cpp":                                           "./_build/xml/"
+	"onnx_runtime_cpp":"./_build/xml/"
 }
-breathe_default_project =                                           "onnx_runtime_cpp"
+breathe_default_project = "onnx_runtime_cpp"
 breathe_default_members = ('members', 'undoc-members')
