@@ -24,6 +24,8 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
+COPY ./ /workspace
 WORKDIR /workspace
+RUN make apps 
 
 ENTRYPOINT ["/bin/bash"]
