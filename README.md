@@ -144,6 +144,7 @@ the following result can be obtained
 ```bash
 # after make apps
 ./build/examples/mask_rcnn [path/to/mask_rcnn/onnx/model] ./data/images/dogs.jpg
+./build/examples/mask_rcnn [path/to/mask_rcnn/onnx/model] ./data/images/indoor.jpg
 ```
 
 </details>
