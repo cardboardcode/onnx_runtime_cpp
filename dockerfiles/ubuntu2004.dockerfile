@@ -3,7 +3,9 @@ FROM ubuntu:20.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 WORKDIR /build
-COPY ./scripts .
+COPY ./scripts/install_latest_cmake.bash install_latest_cmake.bash
+COPY ./scripts/install_onnx_runtime.bash install_onnx_runtime.bash
+COPY ./scripts/install_apps_dependencies.bash install_apps_dependencies.bash
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
@@ -22,6 +24,8 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
+COPY ./ /workspace
 WORKDIR /workspace
+RUN make apps
 
 ENTRYPOINT ["/bin/bash"]

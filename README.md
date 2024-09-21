@@ -63,6 +63,22 @@ docker run -it --rm --gpus all -v `pwd`:/workspace onnx_runtime_gpu
 
 </details>
 
+<details>
+<summary>GPU with CUDA & TensorRT</summary>
+
+```bash
+# build
+# change the cuda version to match your local cuda version before build the docker
+
+docker build -f ./dockerfiles/ubuntu2004_tensorrt.dockerfile -t onnx_runtime_gpu_tensorrt .
+
+# run
+docker run -it --rm --gpus all -v `pwd`:/workspace onnx_runtime_gpu_tensorrt
+```
+
+</details>
+
+
 ## **Run**
 
 ---
