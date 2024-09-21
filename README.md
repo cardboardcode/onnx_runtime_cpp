@@ -2,21 +2,6 @@
 
 This is a C++ library to quickly use [onnxruntime](https://github.com/microsoft/onnxruntime) to deploy deep learning models.
 
-## **Installation**
-
-- build onnxruntime from source with the following script
-
-```bash
-    # onnxruntime needs newer cmake version to build
-    bash ./scripts/install_latest_cmake.bash
-
-
-    bash ./scripts/install_onnx_runtime.bash
-
-    # dependencies to build apps
-    bash ./scripts/install_apps_dependencies.bash
-```
-
 ## **Build**
 
 ---
