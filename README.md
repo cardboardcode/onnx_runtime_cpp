@@ -1,37 +1,8 @@
-[![Build](https://github.com/xmba15/onnx_runtime_cpp/actions/workflows/build.yml/badge.svg)](https://github.com/xmba15/onnx_runtime_cpp/actions/workflows/build.yml)
+# **What Is This**
 
-If this work somehow makes your day, maybe you can consider :)
+This is a C++ library to quickly use [onnxruntime](https://github.com/microsoft/onnxruntime) to deploy deep learning models.
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/xmba15)
-
-# small c++ library to quickly use [onnxruntime](https://github.com/microsoft/onnxruntime) to deploy deep learning models
-
-Thanks to [cardboardcode](https://github.com/cardboardcode), we have [the documentation](https://onnx-runtime-cpp.readthedocs.io/en/latest/index.html) for this small library.
-Hope that they both are helpful for your work.
-
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#todo">TODO</a></li>
-    <li><a href="#installation">Installation</a></li>
-    <li>
-        <a href="#how-to-build">How to Build</a>
-        <ul>
-            <li><a href="#how-to-run-with-docker">How to Run with Docker</a></li>
-        </ul>
-    </li>
-    <li><a href="#how-to-test-apps">How to test apps</a></li>
-  </ol>
-</details>
-
-## TODO
-
-- [x] Support inference of multi-inputs, multi-outputs
-- [x] Examples for famous models, like yolov3, mask-rcnn, [ultra-light-weight face detector](https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB), [yolox](https://github.com/Megvii-BaseDetection/YOLOX), [PaddleSeg](https://github.com/PaddlePaddle/PaddleSeg/tree/release/2.3), [SuperPoint](https://github.com/magicleap/SuperPointPretrainedNetwork), [SuperGlue](https://github.com/magicleap/SuperGluePretrainedNetwork/tree/ddcf11f42e7e0732a0c4607648f9448ea8d73590), [LoFTR](https://zju3dv.github.io/loftr/). Might consider supporting more if requested.
-- [x] (Minimal^^) Support for TensorRT backend
-- [ ] Batch-inference
-
-## Installation
+## **Installation**
 
 - build onnxruntime from source with the following script
 
@@ -46,7 +17,7 @@ Hope that they both are helpful for your work.
     bash ./scripts/install_apps_dependencies.bash
 ```
 
-## How to build
+## **Build**
 
 ---
 
@@ -73,7 +44,7 @@ make gpu_apps
 
 </details>
 
-### How to Run with Docker
+### **Run with Docker**
 
 <details>
 <summary>CPU</summary>
@@ -107,7 +78,7 @@ docker run -it --rm --gpus all -v `pwd`:/workspace onnx_runtime_gpu
 
 </details>
 
-## How to test apps
+## **Run**
 
 ---
 
