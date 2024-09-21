@@ -34,6 +34,8 @@ int main(int argc, char* argv[])
     const std::string ONNX_MODEL_PATH = argv[1];
     const std::string IMAGE_PATH = argv[2];
 
+    std::cout << "[INFO] - Processing [" << IMAGE_PATH << "] with [" << ONNX_MODEL_PATH << "]" << std::endl;
+
     Ort::TinyYolov2 osh(Ort::VOC_NUM_CLASSES, ONNX_MODEL_PATH, 0,
                         std::vector<std::vector<int64_t>>{{1, Ort::TinyYolov2::IMG_CHANNEL, Ort::TinyYolov2::IMG_WIDTH,
                                                            Ort::TinyYolov2::IMG_HEIGHT}});
@@ -50,7 +52,9 @@ int main(int argc, char* argv[])
 
     auto resultImg = ::processOneFrame(osh, img, dst.data());
 
-    cv::imwrite("result.jpg", resultImg);
+    const std::string output_filename = "output/result.jpg";
+    std::cout << "[INFO] - Writing to output/result.jpg..." << std::endl;
+    cv::imwrite(output_filename, resultImg);
 
     return EXIT_SUCCESS;
 }
@@ -90,7 +94,24 @@ cv::Mat processOneFrame(const Ort::TinyYolov2& osh, const cv::Mat& inputImg, flo
         afterNmsClassIndices.emplace_back(classIndices[idx]);
     }
 
-    result = ::visualizeOneImage(result, afterNmsBboxes, afterNmsClassIndices, COLORS, osh.classNames());
+    const float original_width = Ort::TinyYolov2::IMG_WIDTH;
+    const float original_height = Ort::TinyYolov2::IMG_HEIGHT;
+
+    const float new_width = static_cast<float>(inputImg.cols);
+    const float new_height = static_cast<float>(inputImg.rows);
+
+    // Scaling factors for width and height
+    float width_ratio = new_width / original_width;
+    float height_ratio = new_height / original_height;
+
+    for (auto& bbox : afterNmsBboxes) {
+        bbox[0] *= width_ratio;   // x1
+        bbox[1] *= height_ratio;  // y1
+        bbox[2] *= width_ratio;   // x2
+        bbox[3] *= height_ratio;  // y2
+    }
+
+    result = ::visualizeOneImage(inputImg, afterNmsBboxes, afterNmsClassIndices, COLORS, osh.classNames());
 
     return result;
 }
