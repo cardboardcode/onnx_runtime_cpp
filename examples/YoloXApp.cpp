@@ -49,6 +49,7 @@ int main(int argc, char* argv[])
     std::vector<float> dst(Ort::YoloX::IMG_CHANNEL * Ort::YoloX::IMG_H * Ort::YoloX::IMG_W);
     auto result = processOneFrame(osh, img, dst.data(), CONFIDENCE_THRESHOLD);
     cv::imwrite("result.jpg", result);
+    std::cout << "Written to [result.jpg]" << std::endl;
 
     return EXIT_SUCCESS;
 }
